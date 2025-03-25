@@ -1,0 +1,171 @@
+# multi-run experiment configuration file.
+identifier: "HQ-SciRep25"
+
+pipeline: Simulation
+package: snn.projects.simulation
+
+config: "synthetic.yaml"
+
+# if CPU parallelization is enabled, use this many processes.
+workers: 1
+
+grid:
+  baseline:
+    # subdirectory names for each level in this condition (dataset_gain_duplication).
+    names: [# "con_b6_4", "con_b6_8", "con_b6_16", "con_b6_32", "sat_b6_4", "sat_b6_8", "sat_b6_16", "sat_b6_32",
+            "con_b1", "con_b2", "con_b3", "con_b4", "con_b5", "con_b6", "con_b7", "con_b8", "con_b9", "con_b10",
+            "sat_b1", "sat_b2", "sat_b3", "sat_b4", "sat_b5", "sat_b6", "sat_b7", "sat_b8", "sat_b9", "sat_b10"]
+
+    # YAML editing instructions; multiple entries are varied together.
+    "../models/yaml/bulb/bulb.yaml":
+      ["model", "forward_prop"]: [# .25, .125, .0625, .03125, .25, .125, .0625, .03125,
+                                    .25, .25, .25, .25, .25, .25, .25, .25, .25, .25,
+                                    .25, .25, .25, .25, .25, .25, .25, .25, .25, .25]
+    # in accordance with duplication factor, varying 4/8/16/32.
+    "../models/yaml/bulb/ensembles/MC.yaml":
+      [ "model", "num_units" ]: [# 32, 64, 128, 256, 32, 64, 128, 256,
+                                 32, 32, 32, 32, 32, 32, 32, 32, 32, 32,
+                                 32, 32, 32, 32, 32, 32, 32, 32, 32, 32]
+    "../models/yaml/bulb/ensembles/GC.yaml":
+      [ "model", "num_units" ]: [# 128, 256, 512, 1024, 128, 256, 512, 1024,
+                                 128, 128, 128, 128, 128, 128, 128, 128, 128, 128,
+                                 128, 128, 128, 128, 128, 128, 128, 128, 128, 128]
+
+    "../models/yaml/bulb/synapses/ET--MC.yaml":
+      ["model", "baseline"]: [# 56, 56, 56, 56, 56, 56, 56, 56,
+                              25, 28, 32, 37, 45, 56, 73, 109, 208, 2500,
+                              25, 28, 32, 37, 45, 56, 73, 109, 208, 2500]
+      ["model", "uniform"]: True
+      ["model", "adaptive"]: False
+      ["model", "smoothing"]: [# -1, -1, -1, -1, -1, -1, -1, -1,
+                               -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+                               -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+    "../projects/yaml/synthetic.yaml":
+      ["synthesis", "physical", "depth"]: [# 3, 3, 3, 3, 3, 3, 3, 3,
+                                           3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+                                           3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+      ["condition"]: "Baseline"
+
+      ["simulation", "duplication"]: [# 4, 8, 16, 32, 4, 8, 16, 32,
+                                      4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+                                      4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+      ["synthesis", "physical", "sigmoid", "loc"]: [# 0, 0, 0, 0, .5, .5, .5, .5,
+                                                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                                                    .5, .5, .5, .5, .5, .5, .5, .5, .5, .5]
+      ["synthesis", "physical", "sigmoid", "scale"]: [# 0, 0, 0, 0, 8, 8, 8, 8,
+                                                      0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                                                      8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
+      ["synthesis", "physical", "noise", "scale"]: [# [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    # [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    # [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    # [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    # .02, .02, .02, .02,
+                                                    [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                     [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                     [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                     [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                     [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                     [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                     [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                     [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                     [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                     [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                     .02, .02, .02, .02, .02, .02, .02, .02, .02, .02]
+
+      ["session"]: [# "Concentration", "Concentration", "Concentration", "Concentration",
+                    # "Saturation", "Saturation", "Saturation", "Saturation",
+                    "Concentration", "Concentration", "Concentration", "Concentration", "Concentration",
+                    "Concentration", "Concentration", "Concentration", "Concentration", "Concentration",
+                    "Saturation", "Saturation", "Saturation", "Saturation", "Saturation", "Saturation",
+                    "Saturation", "Saturation", "Saturation", "Saturation"]
+      ["variant"]: [# "con_b6_4", "con_b6_8", "con_b6_16", "con_b6_32", "sat_b6_4", "sat_b6_8", "sat_b6_16", "sat_b6_32",
+            "con_b1", "con_b2", "con_b3", "con_b4", "con_b5", "con_b6", "con_b7", "con_b8", "con_b9", "con_b10",
+            "sat_b1", "sat_b2", "sat_b3", "sat_b4", "sat_b5", "sat_b6", "sat_b7", "sat_b8", "sat_b9", "sat_b10"]
+
+  uniform:
+    # subdirectory names for each level in this condition.
+    names: ["con_4", "con_8", "con_16", "con_32", "sat_4", "sat_8", "sat_16", "sat_32"]
+    # MC->GC connection probability.
+    "../models/yaml/bulb/bulb.yaml":
+      ["model", "forward_prop"]: [.25, .125, .0625, .03125, .25, .125, .0625, .03125]
+    # duplication factor, varying 4/8/16/32.
+    "../models/yaml/bulb/ensembles/MC.yaml":
+      ["model", "num_units"]: [32, 64, 128, 256, 32, 64, 128, 256]
+    "../models/yaml/bulb/ensembles/GC.yaml":
+      ["model", "num_units"]: [128, 256, 512, 1024, 128, 256, 512, 1024]
+    "../models/yaml/bulb/synapses/ET--MC.yaml":
+      ["model", "baseline"]: False
+      ["model", "uniform"]: True
+      ["model", "adaptive"]: False
+      ["model", "smoothing"]: [-1, -1, -1, -1, -1, -1, -1, -1]
+    "../projects/yaml/synthetic.yaml":
+      ["simulation", "duplication"]: [4, 8, 16, 32, 4, 8, 16, 32]
+      ["synthesis", "physical", "sigmoid", "loc"]: [0, 0, 0, 0, .5, .5, .5, .5]
+      ["synthesis", "physical", "sigmoid", "scale"]: [0, 0, 0, 0, 8, 8, 8, 8]
+      ["synthesis", "physical", "noise", "scale"]: [[.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    .02, .02, .02, .02]
+      ["condition"]: "Uniform"
+      ["session"]: ["Concentration", "Concentration", "Concentration", "Concentration",
+                    "Saturation", "Saturation", "Saturation", "Saturation"]
+      ["variant"]: ["con_4", "con_8", "con_16", "con_32", "sat_4", "sat_8", "sat_16", "sat_32"]
+
+  adaptive:
+    # subdirectory names for each level in this condition.
+    names: ["con_4_s0", "con_8_s0", "con_16_s0", "con_32_s0",
+            "con_4_s25", "con_8_s25", "con_16_s25", "con_32_s25",
+            "con_4_s50", "con_8_s50", "con_16_s50", "con_32_s50",
+            "sat_4_s0", "sat_8_s0", "sat_16_s0", "sat_32_s0",
+            "sat_4_s25", "sat_8_s25", "sat_16_s25", "sat_32_s25",
+            "sat_4_s50", "sat_8_s50", "sat_16_s50", "sat_32_s50"]
+    # MC->GC connection probability, optimally (#GC/#MC) / (#MC/#ET) to center GC utilization histogram.
+    "../models/yaml/bulb/bulb.yaml":
+      ["model", "forward_prop"]: [.25, .125, .0625, .03125, .25, .125, .0625, .03125, .25, .125, .0625, .03125,
+                                  .25, .125, .0625, .03125, .25, .125, .0625, .03125, .25, .125, .0625, .03125]
+    # duplication factor, varying 8/16/32/64.
+    "../models/yaml/bulb/ensembles/MC.yaml":
+      ["model", "num_units"]: [32, 64, 128, 256, 32, 64, 128, 256, 32, 64, 128, 256,
+                               32, 64, 128, 256, 32, 64, 128, 256, 32, 64, 128, 256]
+    "../models/yaml/bulb/ensembles/GC.yaml":
+      ["model", "num_units"]: [64, 128, 256, 512, 64, 128, 256, 512, 64, 128, 256, 512,
+                               128, 256, 512, 1024, 128, 256, 512, 1024, 128, 256, 512, 1024]
+    "../models/yaml/bulb/synapses/ET--MC.yaml":
+      ["model", "baseline"]: False
+      ["model", "uniform"]: True
+      ["model", "adaptive"]: True
+      ["model", "sweep", "fixed", "weights" ]: 0.0
+      ["model", "smoothing"]: [0, 0, 0, 0, 0.25, 0.25, 0.25, 0.25, 0.5, 0.5, 0.5, 0.5,
+                               0, 0, 0, 0, 0.25, 0.25, 0.25, 0.25, 0.5, 0.5, 0.5, 0.5]
+    "../projects/yaml/synthetic.yaml":
+      ["simulation", "duplication"]: [4, 8, 16, 32, 4, 8, 16, 32, 4, 8, 16, 32,
+                                      4, 8, 16, 32, 4, 8, 16, 32, 4, 8, 16, 32]
+      ["synthesis", "physical", "sigmoid", "loc"]: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                                                             .5, .5, .5, .5, .5, .5, .5, .5, .5, .5, .5, .5,]
+      ["synthesis", "physical", "sigmoid", "scale"]: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                                                               8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
+      ["synthesis", "physical", "noise", "scale"]: [[.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    [.01, .01, .01, .01, .01, .02, .05, .1],
+                                                    .02, .02, .02, .02, .02, .02, .02, .02, .02, .02, .02, .02]
+      ["condition"]: "Adaptive"
+      ["session"]: ["Concentration", "Concentration", "Concentration", "Concentration", "Concentration", "Concentration",
+                    "Concentration", "Concentration", "Concentration", "Concentration", "Concentration", "Concentration",
+                    "Saturation", "Saturation", "Saturation", "Saturation", "Saturation", "Saturation",
+                    "Saturation", "Saturation", "Saturation", "Saturation", "Saturation", "Saturation"]
+      ["variant"]: ["con_4_s0", "con_8_s0", "con_16_s0", "con_32_s0",
+            "con_4_s25", "con_8_s25", "con_16_s25", "con_32_s25",
+            "con_4_s50", "con_8_s50", "con_16_s50", "con_32_s50",
+            "sat_4_s0", "sat_8_s0", "sat_16_s0", "sat_32_s0",
+            "sat_4_s25", "sat_8_s25", "sat_16_s25", "sat_32_s25",
+            "sat_4_s50", "sat_8_s50", "sat_16_s50", "sat_32_s50"]

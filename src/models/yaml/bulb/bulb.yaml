@@ -1,0 +1,69 @@
+# Sapinet 2.0 olfactory bulb model.
+# Unused components are commented out.
+
+identifier: sapinet
+
+# Full path to root directory. If a relative path is provided, assumes the project root.
+root: ../models/yaml/bulb
+
+# Model architecture.
+# Traversal order within any single depth level (BFS-inferred) is user determined.
+# For example, if OSN->PG, OSN->ET, and PG->ET, then PG and ET are both d=1 away from the root (OSN).
+# If PG precedes ET on the ensemble/synapse lists below, traversal order will be [OSN, PG, ET, ...].
+model:
+  # proportion of MC->GC connections enabled.
+  forward_prop: .125
+
+  # neurogenesis settings.
+  neurogenesis:
+    # GCs initially enabled, expressed as a proportion of the total number of GCs.
+    init: 0
+    # rate of genesis, expressed as a proportion of the total number of GCs.
+    rate: .125
+    # how often to invoke neurogenesis, in simulation steps (note: may be invoked on first step as well).
+    # set to (training_duration + rinse_duration).
+    freq: 300
+
+  # Paths to ensemble configuration files. Can be absolute or relative to `root`.
+  ensembles:
+    # Sensor or input layer.
+  - ensembles/OSN.yaml
+    # Oscillators and modulators.
+  - ensembles/OSC.yaml
+  - ensembles/OSCi.yaml
+    # Conditioning layer.
+  - ensembles/ET.yaml
+    # Excitatory layer.
+  - ensembles/MC.yaml
+    # Inhibitory layer.
+  - ensembles/GC.yaml
+
+  # Paths to synapse configuration files. Can be absolute or relative to `root`.
+  synapses:
+  - synapses/OSN--ET.yaml
+  - synapses/ET--ET.yaml
+  - synapses/ET--MC.yaml
+  - synapses/OSC--MC.yaml
+  - synapses/MC--GC.yaml
+  - synapses/GC--MC.yaml
+
+processing:
+  # readout layer specification.
+  readout:
+  - ET
+  - MC
+  - GC
+
+  # whether and how to accumulate readout layer responses to the test set.
+  accumulator:
+    ET:
+      mode: mean
+      take_final: true
+
+    MC:
+      mode: phase
+      take_final: true
+
+    GC:
+      mode: phase
+      take_final: true

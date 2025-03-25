@@ -1,0 +1,19 @@
+package: sapicore.engine.synapse
+class: Synapse
+
+model:
+  identifier: OSCi--GC
+
+  source: OSCi
+  target: GC
+
+  sweep:
+    fixed:
+      # larger weights create/tighten a permissive window for GCs.
+      # optimal values are indicated by nuanced GC RSA matrices.
+      weights: -0.0
+      delay_ms: 0.0
+
+loggable:
+  - weights
+  - output

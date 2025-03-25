@@ -1,0 +1,6 @@
+package: sapicore.engine.ensemble.analog
+class: AnalogEnsemble
+
+model:
+  identifier: OSN
+  num_units: 8

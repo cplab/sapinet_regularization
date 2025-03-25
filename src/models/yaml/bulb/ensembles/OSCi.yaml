@@ -1,0 +1,21 @@
+package: sapicore.engine.ensemble.analog
+class: OscillatorEnsemble
+
+model:
+  identifier: OSCi
+  num_units: 1
+  num_wave_comps: 1
+
+  sweep:
+    # this singleton layer produces a 40Hz gamma oscillation.
+    fixed:
+      amplitudes: [1.0]
+      # frequency combinations going into each oscillator unit.
+      frequencies: [20.0]
+      # phase shifts for each frequency component, to be multiplied by np.pi (all zeros by default).
+      phases: [0.0]
+      # this is, implicitly, a prior on the working range of your sensors/features (i.e., "the lowest k% is noise").
+      # baseline shift > amplitude will soft-threshold weak signals by drowning them out of the permissive window.
+      # baseline shift = amplitude will allow the weakest signal to express itself at the very trough.
+      # baseline shift < amplitude will make gamma excitatory around the trough.
+      baseline_shift: 1.0
