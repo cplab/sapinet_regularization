@@ -16,7 +16,7 @@ model:
 
   # in the adaptive heterogeneous mode, weight densities are determined based on a calibration set.
   adaptive: false
-  smoothing: 0.25 # bias-variance lever for weight density interpolation, from 0 (jagged) to 1 (smooth).
+  smoothing: -1   # bias-variance lever for weight density interpolation, from 0 (jagged) to 1 (smooth).
 
   # current required to fire an average LIF unit in the destination ensemble.
   payload: 25.0

@@ -77,8 +77,7 @@ grid:
       ["model", "num_units"]: [32, 64, 128, 256, 32, 64, 128, 256]
     "../models/yaml/bulb/ensembles/GC.yaml":
       ["model", "num_units"]: [128, 256, 512, 1024, 128, 256, 512, 1024]
-      [ "model", "sweep", "fixed", "volt_thresh" ]: [ -50, -50, -50, -50, -50, -50, -50, -50, -50, -50,
-                                                      -50, -50, -50, -50, -50, -50, -50, -50, -50, -50 ]
+      [ "model", "sweep", "fixed", "volt_thresh" ]: [ -50, -50, -50, -50, -50, -50, -50, -50 ]
     "../models/yaml/bulb/synapses/ET--MC.yaml":
       ["model", "baseline"]: False
       ["model", "uniform"]: True
@@ -117,8 +116,8 @@ grid:
     "../models/yaml/bulb/ensembles/GC.yaml":
       ["model", "num_units"]: [64, 128, 256, 512, 64, 128, 256, 512, 64, 128, 256, 512,
                                128, 256, 512, 1024, 128, 256, 512, 1024, 128, 256, 512, 1024]
-      [ "model", "sweep", "fixed", "volt_thresh" ]: [ -50, -50, -50, -50, -50, -50, -50, -50, -50, -50,
-                                                      -50, -50, -50, -50, -50, -50, -50, -50, -50, -50 ]
+      [ "model", "sweep", "fixed", "volt_thresh" ]: [ -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50,
+                                                      -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50 ]
     "../models/yaml/bulb/synapses/ET--MC.yaml":
       ["model", "baseline"]: False
       ["model", "uniform"]: True

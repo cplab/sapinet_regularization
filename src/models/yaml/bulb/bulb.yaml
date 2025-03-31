@@ -12,7 +12,7 @@ root: ../models/yaml/bulb
 # If PG precedes ET on the ensemble/synapse lists below, traversal order will be [OSN, PG, ET, ...].
 model:
   # proportion of MC->GC connections enabled.
-  forward_prop: .125
+  forward_prop: 0.25
 
   # NEUROGENESIS NOT USED IN MOYAL ET AL. 2025.
   # neurogenesis:

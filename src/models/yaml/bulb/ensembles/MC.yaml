@@ -3,7 +3,7 @@ class: LIFEnsemble
 
 model:
   identifier: MC
-  num_units: 64
+  num_units: 32
 
   # background oscillation period (comment out if not applicable).
   cycle_length: 50

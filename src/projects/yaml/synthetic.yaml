@@ -5,8 +5,8 @@ identifier: SciRep24
 mode: Synthetic
 
 # session and condition identifiers for tabular output and multirunner.
-condition: Adaptive
-session: Saturation
+condition: Uniform
+session: Concentration
 
 device: cpu  # hardware device, "cpu" or "cuda".
 seed: 314  # random number generation seed for reproducibility.
@@ -66,10 +66,18 @@ synthesis:
       distribution: norm
       proportion: 1
       loc: 0
-      scale: 0.02
+      scale:
+      - 0.01
+      - 0.01
+      - 0.01
+      - 0.01
+      - 0.01
+      - 0.02
+      - 0.05
+      - 0.1
     sigmoid:
-      loc: 0.5
-      scale: 8
+      loc: 0
+      scale: 0
 
 sampling:
   # metadata key whose values should be treated as class labels.
@@ -126,7 +134,7 @@ simulation:
   dump: false
 
   # automatically edited by multi-run script; for logging purposes only.
-  duplication: 32
+  duplication: 4
 
   tensorboard:
   - spiked:
@@ -151,4 +159,4 @@ simulation:
       kind: trace
       format: scalar
 
-variant: sat_32_s25
+variant: con_4
