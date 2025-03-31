@@ -13,7 +13,7 @@ model:
 
   sweep:
     fixed:
-      volt_thresh: -55.0
+      volt_thresh: -50.0
       volt_rest: -60.0
       tau_ref: 50.0
       leak_gl: 1.0

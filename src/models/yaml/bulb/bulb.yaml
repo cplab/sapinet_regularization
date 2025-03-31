@@ -14,15 +14,15 @@ model:
   # proportion of MC->GC connections enabled.
   forward_prop: .125
 
-  # neurogenesis settings.
-  neurogenesis:
+  # NEUROGENESIS NOT USED IN MOYAL ET AL. 2025.
+  # neurogenesis:
     # GCs initially enabled, expressed as a proportion of the total number of GCs.
-    init: 0
+  #  init: 0
     # rate of genesis, expressed as a proportion of the total number of GCs.
-    rate: .125
+  #  rate: .125
     # how often to invoke neurogenesis, in simulation steps (note: may be invoked on first step as well).
     # set to (training_duration + rinse_duration).
-    freq: 300
+  #  freq: 300
 
   # Paths to ensemble configuration files. Can be absolute or relative to `root`.
   ensembles:
@@ -30,7 +30,7 @@ model:
   - ensembles/OSN.yaml
     # Oscillators and modulators.
   - ensembles/OSC.yaml
-  - ensembles/OSCi.yaml
+  # - ensembles/OSCi.yaml
     # Conditioning layer.
   - ensembles/ET.yaml
     # Excitatory layer.

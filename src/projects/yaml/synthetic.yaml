@@ -111,7 +111,7 @@ simulation:
   rsa: true
 
   # whether 3D data and response visualization plots should be interactive (true) or static (false).
-  interactive: true
+  interactive: false
 
   # whether to render individual fold plots and/or group-level plots, respectively.
   # note that group plot SVGs can get prohibitively large, and should only be used with small/toy runs.

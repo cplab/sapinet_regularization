@@ -7,6 +7,7 @@ from datetime import datetime
 
 import os
 import gc
+import sys
 import random
 import zipfile
 import warnings
@@ -29,6 +30,11 @@ from sapicore.data.sampling import CV, BalancedSampler
 from sapicore.utils.constants import TIME_FORMAT
 from sapicore.utils.io import ensure_dir, load_apply_config
 from sapicore.utils.seed import fix_random_seed
+
+# enable running from projects subdirectory in terminal.
+src_path = os.path.abspath(os.path.join(os.getcwd(), "..", ".."))
+if src_path not in sys.path:
+    sys.path.insert(0, src_path)
 
 from src.models.bulb import BulbModel
 

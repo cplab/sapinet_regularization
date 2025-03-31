@@ -2,7 +2,7 @@
 identifier: "HQ-SciRep25"
 
 pipeline: Simulation
-package: snn.projects.simulation
+package: src.projects.simulation
 
 config: "synthetic.yaml"
 
@@ -17,15 +17,17 @@ grid:
 
     # YAML editing instructions; multiple entries are varied together.
     "../models/yaml/bulb/bulb.yaml":
-      ["model", "forward_prop"]: [.25, .25, .25, .25, .25, .25, .25, .25, .25, .25,
-                                  .25, .25, .25, .25, .25, .25, .25, .25, .25, .25]
+      ["model", "forward_prop"]: [.5, .5, .5, .5, .5, .5, .5, .5, .5, .5,
+                                  .5, .5, .5, .5, .5, .5, .5, .5, .5, .5]
     # in accordance with duplication factor, varying 4/8/16/32.
     "../models/yaml/bulb/ensembles/MC.yaml":
+      [ "model", "num_units" ]: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8,
+                                 8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
+    "../models/yaml/bulb/ensembles/GC.yaml":
       [ "model", "num_units" ]: [32, 32, 32, 32, 32, 32, 32, 32, 32, 32,
                                  32, 32, 32, 32, 32, 32, 32, 32, 32, 32]
-    "../models/yaml/bulb/ensembles/GC.yaml":
-      [ "model", "num_units" ]: [128, 128, 128, 128, 128, 128, 128, 128, 128, 128,
-                                 128, 128, 128, 128, 128, 128, 128, 128, 128, 128]
+      [ "model", "sweep", "fixed", "volt_thresh" ]: [ -50, -50, -50, -50, -50, -50, -50, -50, -50, -50,
+                                                      -50, -50, -50, -50, -50, -50, -50, -50, -50, -50 ]
 
     "../models/yaml/bulb/synapses/ET--MC.yaml":
       ["model", "baseline"]: [25, 28, 32, 37, 45, 56, 73, 109, 208, 2500,
@@ -39,8 +41,8 @@ grid:
                                            3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
       ["condition"]: "Baseline"
 
-      ["simulation", "duplication"]: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
-                                      4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+      ["simulation", "duplication"]: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                                      1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
       ["synthesis", "physical", "sigmoid", "loc"]: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                                                     .5, .5, .5, .5, .5, .5, .5, .5, .5, .5]
       ["synthesis", "physical", "sigmoid", "scale"]: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -75,6 +77,8 @@ grid:
       ["model", "num_units"]: [32, 64, 128, 256, 32, 64, 128, 256]
     "../models/yaml/bulb/ensembles/GC.yaml":
       ["model", "num_units"]: [128, 256, 512, 1024, 128, 256, 512, 1024]
+      [ "model", "sweep", "fixed", "volt_thresh" ]: [ -50, -50, -50, -50, -50, -50, -50, -50, -50, -50,
+                                                      -50, -50, -50, -50, -50, -50, -50, -50, -50, -50 ]
     "../models/yaml/bulb/synapses/ET--MC.yaml":
       ["model", "baseline"]: False
       ["model", "uniform"]: True
@@ -113,6 +117,8 @@ grid:
     "../models/yaml/bulb/ensembles/GC.yaml":
       ["model", "num_units"]: [64, 128, 256, 512, 64, 128, 256, 512, 64, 128, 256, 512,
                                128, 256, 512, 1024, 128, 256, 512, 1024, 128, 256, 512, 1024]
+      [ "model", "sweep", "fixed", "volt_thresh" ]: [ -50, -50, -50, -50, -50, -50, -50, -50, -50, -50,
+                                                      -50, -50, -50, -50, -50, -50, -50, -50, -50, -50 ]
     "../models/yaml/bulb/synapses/ET--MC.yaml":
       ["model", "baseline"]: False
       ["model", "uniform"]: True

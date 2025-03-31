@@ -27,12 +27,12 @@ See ``setup.py`` for dependency information.
 
 Simulation
 ----------
-* To reproduce the results, run the master script (multi-run):
+* To reproduce the results and plots, run the master script from its own directory:
 
       cd src/projects
-      python simulation.py -multirun yaml/multi.yaml
+      python simulation.py -multirun yaml/hq2025.yaml
 
-* You may modify project, model, and component YAMLs to your liking and run single-use pipelines, e.g.:
+* You may modify component, model, and project YAMLs to your liking and run single-use pipelines, e.g.:
 
       cd src/projects
       python simulation.py -experiment yaml/synthetic.yaml
@@ -51,7 +51,8 @@ generated in the previous step:
 
 * Run `analysis.r` and inspect the results generated under `analysis/<run>`.
 
-You may also directly inspect the output reported in the manuscript, included in this repository under:
+You may also directly inspect the raw synthetic datasets and statistical output
+reported in the manuscript. Both are included in this repository under:
 
       analysis/SciRep-Final
 
