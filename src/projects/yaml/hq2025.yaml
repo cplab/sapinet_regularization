@@ -12,55 +12,40 @@ workers: 1
 grid:
   baseline:
     # subdirectory names for each level in this condition (dataset_gain_duplication).
-    names: [# "con_b6_4", "con_b6_8", "con_b6_16", "con_b6_32", "sat_b6_4", "sat_b6_8", "sat_b6_16", "sat_b6_32",
-            "con_b1", "con_b2", "con_b3", "con_b4", "con_b5", "con_b6", "con_b7", "con_b8", "con_b9", "con_b10",
+    names: ["con_b1", "con_b2", "con_b3", "con_b4", "con_b5", "con_b6", "con_b7", "con_b8", "con_b9", "con_b10",
             "sat_b1", "sat_b2", "sat_b3", "sat_b4", "sat_b5", "sat_b6", "sat_b7", "sat_b8", "sat_b9", "sat_b10"]
 
     # YAML editing instructions; multiple entries are varied together.
     "../models/yaml/bulb/bulb.yaml":
-      ["model", "forward_prop"]: [# .25, .125, .0625, .03125, .25, .125, .0625, .03125,
-                                    .25, .25, .25, .25, .25, .25, .25, .25, .25, .25,
-                                    .25, .25, .25, .25, .25, .25, .25, .25, .25, .25]
+      ["model", "forward_prop"]: [.25, .25, .25, .25, .25, .25, .25, .25, .25, .25,
+                                  .25, .25, .25, .25, .25, .25, .25, .25, .25, .25]
     # in accordance with duplication factor, varying 4/8/16/32.
     "../models/yaml/bulb/ensembles/MC.yaml":
-      [ "model", "num_units" ]: [# 32, 64, 128, 256, 32, 64, 128, 256,
-                                 32, 32, 32, 32, 32, 32, 32, 32, 32, 32,
+      [ "model", "num_units" ]: [32, 32, 32, 32, 32, 32, 32, 32, 32, 32,
                                  32, 32, 32, 32, 32, 32, 32, 32, 32, 32]
     "../models/yaml/bulb/ensembles/GC.yaml":
-      [ "model", "num_units" ]: [# 128, 256, 512, 1024, 128, 256, 512, 1024,
-                                 128, 128, 128, 128, 128, 128, 128, 128, 128, 128,
+      [ "model", "num_units" ]: [128, 128, 128, 128, 128, 128, 128, 128, 128, 128,
                                  128, 128, 128, 128, 128, 128, 128, 128, 128, 128]
 
     "../models/yaml/bulb/synapses/ET--MC.yaml":
-      ["model", "baseline"]: [# 56, 56, 56, 56, 56, 56, 56, 56,
-                              25, 28, 32, 37, 45, 56, 73, 109, 208, 2500,
+      ["model", "baseline"]: [25, 28, 32, 37, 45, 56, 73, 109, 208, 2500,
                               25, 28, 32, 37, 45, 56, 73, 109, 208, 2500]
       ["model", "uniform"]: True
       ["model", "adaptive"]: False
-      ["model", "smoothing"]: [# -1, -1, -1, -1, -1, -1, -1, -1,
-                               -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+      ["model", "smoothing"]: [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
                                -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
     "../projects/yaml/synthetic.yaml":
-      ["synthesis", "physical", "depth"]: [# 3, 3, 3, 3, 3, 3, 3, 3,
-                                           3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+      ["synthesis", "physical", "depth"]: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
                                            3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
       ["condition"]: "Baseline"
 
-      ["simulation", "duplication"]: [# 4, 8, 16, 32, 4, 8, 16, 32,
-                                      4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+      ["simulation", "duplication"]: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
                                       4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
-      ["synthesis", "physical", "sigmoid", "loc"]: [# 0, 0, 0, 0, .5, .5, .5, .5,
-                                                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      ["synthesis", "physical", "sigmoid", "loc"]: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                                                     .5, .5, .5, .5, .5, .5, .5, .5, .5, .5]
-      ["synthesis", "physical", "sigmoid", "scale"]: [# 0, 0, 0, 0, 8, 8, 8, 8,
-                                                      0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      ["synthesis", "physical", "sigmoid", "scale"]: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                                                       8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
-      ["synthesis", "physical", "noise", "scale"]: [# [.01, .01, .01, .01, .01, .02, .05, .1],
-                                                    # [.01, .01, .01, .01, .01, .02, .05, .1],
-                                                    # [.01, .01, .01, .01, .01, .02, .05, .1],
-                                                    # [.01, .01, .01, .01, .01, .02, .05, .1],
-                                                    # .02, .02, .02, .02,
-                                                    [.01, .01, .01, .01, .01, .02, .05, .1],
+      ["synthesis", "physical", "noise", "scale"]: [[.01, .01, .01, .01, .01, .02, .05, .1],
                                                      [.01, .01, .01, .01, .01, .02, .05, .1],
                                                      [.01, .01, .01, .01, .01, .02, .05, .1],
                                                      [.01, .01, .01, .01, .01, .02, .05, .1],
@@ -72,14 +57,11 @@ grid:
                                                      [.01, .01, .01, .01, .01, .02, .05, .1],
                                                      .02, .02, .02, .02, .02, .02, .02, .02, .02, .02]
 
-      ["session"]: [# "Concentration", "Concentration", "Concentration", "Concentration",
-                    # "Saturation", "Saturation", "Saturation", "Saturation",
-                    "Concentration", "Concentration", "Concentration", "Concentration", "Concentration",
+      ["session"]: ["Concentration", "Concentration", "Concentration", "Concentration", "Concentration",
                     "Concentration", "Concentration", "Concentration", "Concentration", "Concentration",
                     "Saturation", "Saturation", "Saturation", "Saturation", "Saturation", "Saturation",
                     "Saturation", "Saturation", "Saturation", "Saturation"]
-      ["variant"]: [# "con_b6_4", "con_b6_8", "con_b6_16", "con_b6_32", "sat_b6_4", "sat_b6_8", "sat_b6_16", "sat_b6_32",
-            "con_b1", "con_b2", "con_b3", "con_b4", "con_b5", "con_b6", "con_b7", "con_b8", "con_b9", "con_b10",
+      ["variant"]: ["con_b1", "con_b2", "con_b3", "con_b4", "con_b5", "con_b6", "con_b7", "con_b8", "con_b9", "con_b10",
             "sat_b1", "sat_b2", "sat_b3", "sat_b4", "sat_b5", "sat_b6", "sat_b7", "sat_b8", "sat_b9", "sat_b10"]
 
   uniform:
