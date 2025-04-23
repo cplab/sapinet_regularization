@@ -1,0 +1,6 @@
+package: snn.models.component.neuron
+class: MultEnsemble
+
+model:
+  identifier: ET
+  num_units: 8

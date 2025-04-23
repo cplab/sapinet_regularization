@@ -1,0 +1,1494 @@
+
+Figure 3-4 (Het-Hom Utilization by Condition)
+**************************
+[[1]]
+ model term                          df1 df2  F.ratio p.value
+ Layer                                 1 217  370.984  <.0001
+ Condition                             1 217 4267.360  <.0001
+ Duplication                           3 217    4.266  0.0060
+ Session                               1 217  330.909  <.0001
+ Layer:Condition                       1 217    9.739  0.0020
+ Layer:Duplication                     3 217    1.185  0.3165
+ Layer:Session                         1 217    2.214  0.1382
+ Condition:Duplication                 3 217    2.407  0.0682
+ Condition:Session                     1 217  355.523  <.0001
+ Duplication:Session                   3 217    0.753  0.5218
+ Layer:Condition:Duplication           3 217    2.518  0.0591
+ Layer:Condition:Session               1 217    0.578  0.4481
+ Layer:Duplication:Session             3 217    0.208  0.8906
+ Condition:Duplication:Session         3 217    0.790  0.5007
+ Layer:Condition:Duplication:Session   3 217    0.160  0.9235
+
+
+
+[[1]]
+Duplication = 4, Layer = GC:
+ contrast              estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform    10.47 0.429 217  24.396  <.0001
+
+Duplication = 8, Layer = GC:
+ contrast              estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform    10.06 0.429 217  23.451  <.0001
+
+Duplication = 16, Layer = GC:
+ contrast              estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform    10.78 0.429 217  25.132  <.0001
+
+Duplication = 32, Layer = GC:
+ contrast              estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform    10.22 0.429 217  23.818  <.0001
+
+Duplication = 4, Layer = MC:
+ contrast              estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform     8.16 0.429 217  19.026  <.0001
+
+Duplication = 8, Layer = MC:
+ contrast              estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform     9.46 0.429 217  22.053  <.0001
+
+Duplication = 16, Layer = MC:
+ contrast              estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform     9.95 0.429 217  23.187  <.0001
+
+Duplication = 32, Layer = MC:
+ contrast              estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform    10.17 0.429 217  23.704  <.0001
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+
+
+[[1]]
+   Layer       Session   Condition Duplication Utilization.m Utilization.s
+1     GC Concentration Homogeneous           4    11.6864796   3.651219251
+2     GC Concentration Homogeneous           8    11.1998716   3.236800180
+3     GC Concentration Homogeneous          16    11.1747784   3.074444542
+4     GC Concentration Homogeneous          32    11.2567832   3.117946700
+5     GC Concentration     Uniform           4     3.8794498   1.321959286
+6     GC Concentration     Uniform           8     3.9425422   0.916368666
+7     GC Concentration     Uniform          16     3.3130695   1.508523858
+8     GC Concentration     Uniform          32     4.5558099   1.553856109
+9     GC    Saturation Homogeneous           4    16.9932849   0.840534859
+10    GC    Saturation Homogeneous           8    16.8270980   0.710959865
+11    GC    Saturation Homogeneous          16    16.7836085   0.678076916
+12    GC    Saturation Homogeneous          32    16.7494453   0.763515635
+13    GC    Saturation     Uniform           4     3.8677055   0.676724556
+14    GC    Saturation     Uniform           8     3.9619896   1.071082407
+15    GC    Saturation     Uniform          16     3.0805032   1.108177677
+16    GC    Saturation     Uniform          32     3.0137429   1.135873255
+17    MC Concentration Homogeneous           4     7.8241481   0.074457813
+18    MC Concentration Homogeneous           8     7.8241455   0.074398295
+19    MC Concentration Homogeneous          16     7.8241481   0.074457813
+20    MC Concentration Homogeneous          32     7.8241481   0.074457813
+21    MC Concentration     Uniform           4     2.2449675   0.030675823
+22    MC Concentration     Uniform           8     0.9603674   0.021103470
+23    MC Concentration     Uniform          16     0.7374115   0.010411331
+24    MC Concentration     Uniform          32     0.5915436   0.006409456
+25    MC    Saturation Homogeneous           4    13.5538400   0.016201584
+26    MC    Saturation Homogeneous           8    13.5538400   0.016201584
+27    MC    Saturation Homogeneous          16    13.5538400   0.016201584
+28    MC    Saturation Homogeneous          32    13.5538400   0.016201584
+29    MC    Saturation     Uniform           4     2.8078563   0.050181508
+30    MC    Saturation     Uniform           8     1.4949127   0.040691747
+31    MC    Saturation     Uniform          16     0.7448455   0.022611407
+32    MC    Saturation     Uniform          32     0.4473467   0.017835972
+
+
+
+Figure 4C (Het-Hom Utilization by Duplication)
+**************************
+[[1]]
+ model term                          df1 df2  F.ratio p.value
+ Layer                                 1 217  370.984  <.0001
+ Condition                             1 217 4267.360  <.0001
+ Duplication                           3 217    4.266  0.0060
+ Session                               1 217  330.909  <.0001
+ Layer:Condition                       1 217    9.739  0.0020
+ Layer:Duplication                     3 217    1.185  0.3165
+ Layer:Session                         1 217    2.214  0.1382
+ Condition:Duplication                 3 217    2.407  0.0682
+ Condition:Session                     1 217  355.523  <.0001
+ Duplication:Session                   3 217    0.753  0.5218
+ Layer:Condition:Duplication           3 217    2.518  0.0591
+ Layer:Condition:Session               1 217    0.578  0.4481
+ Layer:Duplication:Session             3 217    0.208  0.8906
+ Condition:Duplication:Session         3 217    0.790  0.5007
+ Layer:Condition:Duplication:Session   3 217    0.160  0.9235
+
+
+
+[[1]]
+Condition = Homogeneous, Layer = GC:
+ contrast                       estimate    SE  df t.ratio p.value
+ Duplication8 - Duplication4   -3.26e-01 0.429 217  -0.761  0.7927
+ Duplication16 - Duplication8  -3.43e-02 0.429 217  -0.080  0.9996
+ Duplication32 - Duplication16  2.39e-02 0.429 217   0.056  0.9999
+
+Condition = Uniform, Layer = GC:
+ contrast                       estimate    SE  df t.ratio p.value
+ Duplication8 - Duplication4    7.87e-02 0.429 217   0.183  0.9957
+ Duplication16 - Duplication8  -7.55e-01 0.429 217  -1.761  0.1993
+ Duplication32 - Duplication16  5.88e-01 0.429 217   1.371  0.3910
+
+Condition = Homogeneous, Layer = MC:
+ contrast                       estimate    SE  df t.ratio p.value
+ Duplication8 - Duplication4   -1.30e-06 0.429 217   0.000  1.0000
+ Duplication16 - Duplication8   1.30e-06 0.429 217   0.000  1.0000
+ Duplication32 - Duplication16  0.00e+00 0.429 217   0.000  1.0000
+
+Condition = Uniform, Layer = MC:
+ contrast                       estimate    SE  df t.ratio p.value
+ Duplication8 - Duplication4   -1.30e+00 0.429 217  -3.027  0.0078
+ Duplication16 - Duplication8  -4.87e-01 0.429 217  -1.134  0.5426
+ Duplication32 - Duplication16 -2.22e-01 0.429 217  -0.517  0.9194
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+P value adjustment: mvt method for 3 tests
+
+
+[[1]]
+   Duplication   Condition Layer Utilization.m Utilization.s
+1            4 Homogeneous    GC    14.3398823    3.74979143
+2            4 Homogeneous    MC    10.6889941    2.95925806
+3            4     Uniform    GC     3.8735776    1.01453697
+4            4     Uniform    MC     2.5264119    0.29343818
+5            8 Homogeneous    GC    14.0134848    3.68364930
+6            8 Homogeneous    MC    10.6889928    2.95925872
+7            8     Uniform    GC     3.9522659    0.96298689
+8            8     Uniform    MC     1.2276401    0.27780844
+9           16 Homogeneous    GC    13.9791935    3.60758354
+10          16 Homogeneous    MC    10.6889941    2.95925806
+11          16     Uniform    GC     3.1967863    1.28432245
+12          16     Uniform    MC     0.7411285    0.01743323
+13          32 Homogeneous    GC    14.0031143    3.58523995
+14          32 Homogeneous    MC    10.6889941    2.95925806
+15          32     Uniform    GC     3.7847764    1.53719702
+16          32     Uniform    MC     0.5194452    0.07558018
+
+
+
+Figure 3-4 (Het-Hom Accuracy by Condition)
+**************************
+[[1]]
+ model term                          df1 df2  F.ratio p.value
+ Layer                                 1 217    9.372  0.0025
+ Condition                             1 217 8782.859  <.0001
+ Duplication                           3 217  135.545  <.0001
+ Session                               1 217 2477.900  <.0001
+ Layer:Condition                       1 217   23.860  <.0001
+ Layer:Duplication                     3 217    6.675  0.0002
+ Layer:Session                         1 217    3.057  0.0818
+ Condition:Duplication                 3 217  116.015  <.0001
+ Condition:Session                     1 217 2195.971  <.0001
+ Duplication:Session                   3 217    3.636  0.0137
+ Layer:Condition:Duplication           3 217    2.746  0.0439
+ Layer:Condition:Session               1 217    0.022  0.8827
+ Layer:Duplication:Session             3 217    2.702  0.0465
+ Condition:Duplication:Session         3 217    4.534  0.0042
+ Layer:Condition:Duplication:Session   3 217    6.094  0.0005
+
+
+
+[[1]]
+Duplication = 4, Layer = GC:
+ contrast              estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform    -16.1 0.721 217 -22.268  <.0001
+
+Duplication = 8, Layer = GC:
+ contrast              estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform    -26.8 0.721 217 -37.116  <.0001
+
+Duplication = 16, Layer = GC:
+ contrast              estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform    -28.9 0.721 217 -40.019  <.0001
+
+Duplication = 32, Layer = GC:
+ contrast              estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform    -28.9 0.721 217 -40.040  <.0001
+
+Duplication = 4, Layer = MC:
+ contrast              estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform    -15.7 0.721 217 -21.773  <.0001
+
+Duplication = 8, Layer = MC:
+ contrast              estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform    -22.9 0.721 217 -31.809  <.0001
+
+Duplication = 16, Layer = MC:
+ contrast              estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform    -27.0 0.721 217 -37.369  <.0001
+
+Duplication = 32, Layer = MC:
+ contrast              estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform    -25.0 0.721 217 -34.677  <.0001
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+
+
+[[1]]
+   Layer       Session   Condition Duplication Accuracy.m Accuracy.s
+1     GC Concentration Homogeneous           4   79.94048  0.9470514
+2     GC Concentration Homogeneous           8   81.59970  1.5431770
+3     GC Concentration Homogeneous          16   81.39137  1.5625709
+4     GC Concentration Homogeneous          32   81.81548  1.0975648
+5     GC Concentration     Uniform           4   87.05357  4.5192198
+6     GC Concentration     Uniform           8   95.53571  2.9676749
+7     GC Concentration     Uniform          16   97.17262  2.4593801
+8     GC Concentration     Uniform          32   97.61905  1.5586992
+9     GC    Saturation Homogeneous           4   56.75595  0.9728872
+10    GC    Saturation Homogeneous           8   56.66667  0.7655895
+11    GC    Saturation Homogeneous          16   57.37351  1.0903644
+12    GC    Saturation Homogeneous          32   56.99405  0.8296810
+13    GC    Saturation     Uniform           4   81.77083  4.3385059
+14    GC    Saturation     Uniform           8   96.27976  3.7206632
+15    GC    Saturation     Uniform          16   99.33036  1.2501012
+16    GC    Saturation     Uniform          32   98.95833  1.6455784
+17    MC Concentration Homogeneous           4   83.75744  0.9141107
+18    MC Concentration Homogeneous           8   83.34821  1.0703651
+19    MC Concentration Homogeneous          16   83.58631  0.9377868
+20    MC Concentration Homogeneous          32   83.79464  0.9356254
+21    MC Concentration     Uniform           4   87.20238  3.1497039
+22    MC Concentration     Uniform           8   95.23810  2.1104887
+23    MC Concentration     Uniform          16   97.09821  2.0481109
+24    MC Concentration     Uniform          32   97.91667  1.3118409
+25    MC    Saturation Homogeneous           4   58.63839  1.1504485
+26    MC    Saturation Homogeneous           8   58.48214  1.3651601
+27    MC    Saturation Homogeneous          16   58.48214  1.1642520
+28    MC    Saturation Homogeneous          32   58.66071  1.2582736
+29    MC    Saturation     Uniform           4   86.60714  3.2290540
+30    MC    Saturation     Uniform           8   92.48512  1.6203945
+31    MC    Saturation     Uniform          16   98.88393  1.3286139
+32    MC    Saturation     Uniform          32   94.56845  5.2225874
+
+
+
+Figure 3-4 (Het-Hom Accuracy by Duplication)
+**************************
+[[1]]
+ model term                          df1 df2  F.ratio p.value
+ Layer                                 1 217    9.372  0.0025
+ Condition                             1 217 8782.859  <.0001
+ Duplication                           3 217  135.545  <.0001
+ Session                               1 217 2477.900  <.0001
+ Layer:Condition                       1 217   23.860  <.0001
+ Layer:Duplication                     3 217    6.675  0.0002
+ Layer:Session                         1 217    3.057  0.0818
+ Condition:Duplication                 3 217  116.015  <.0001
+ Condition:Session                     1 217 2195.971  <.0001
+ Duplication:Session                   3 217    3.636  0.0137
+ Layer:Condition:Duplication           3 217    2.746  0.0439
+ Layer:Condition:Session               1 217    0.022  0.8827
+ Layer:Duplication:Session             3 217    2.702  0.0465
+ Condition:Duplication:Session         3 217    4.534  0.0042
+ Layer:Condition:Duplication:Session   3 217    6.094  0.0005
+
+
+
+[[1]]
+Condition = Homogeneous, Layer = GC:
+ contrast                      estimate    SE  df t.ratio p.value
+ Duplication8 - Duplication4     0.7850 0.721 217   1.088  0.5738
+ Duplication16 - Duplication8    0.2493 0.721 217   0.346  0.9730
+ Duplication32 - Duplication16   0.0223 0.721 217   0.031  1.0000
+
+Condition = Uniform, Layer = GC:
+ contrast                      estimate    SE  df t.ratio p.value
+ Duplication8 - Duplication4    11.4955 0.721 217  15.936  <.0001
+ Duplication16 - Duplication8    2.3438 0.721 217   3.249  0.0038
+ Duplication32 - Duplication16   0.0372 0.721 217   0.052  0.9999
+
+Condition = Homogeneous, Layer = MC:
+ contrast                      estimate    SE  df t.ratio p.value
+ Duplication8 - Duplication4    -0.2827 0.721 217  -0.392  0.9617
+ Duplication16 - Duplication8    0.1190 0.721 217   0.165  0.9968
+ Duplication32 - Duplication16   0.1935 0.721 217   0.268  0.9869
+
+Condition = Uniform, Layer = MC:
+ contrast                      estimate    SE  df t.ratio p.value
+ Duplication8 - Duplication4     6.9568 0.721 217   9.644  <.0001
+ Duplication16 - Duplication8    4.1295 0.721 217   5.724  <.0001
+ Duplication32 - Duplication16  -1.7485 0.721 217  -2.424  0.0443
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+P value adjustment: mvt method for 3 tests
+
+
+[[1]]
+   Layer       Session   Condition Duplication Accuracy.m Accuracy.s
+1     GC Concentration Homogeneous           4   79.94048  0.9470514
+2     GC Concentration Homogeneous           8   81.59970  1.5431770
+3     GC Concentration Homogeneous          16   81.39137  1.5625709
+4     GC Concentration Homogeneous          32   81.81548  1.0975648
+5     GC Concentration     Uniform           4   87.05357  4.5192198
+6     GC Concentration     Uniform           8   95.53571  2.9676749
+7     GC Concentration     Uniform          16   97.17262  2.4593801
+8     GC Concentration     Uniform          32   97.61905  1.5586992
+9     GC    Saturation Homogeneous           4   56.75595  0.9728872
+10    GC    Saturation Homogeneous           8   56.66667  0.7655895
+11    GC    Saturation Homogeneous          16   57.37351  1.0903644
+12    GC    Saturation Homogeneous          32   56.99405  0.8296810
+13    GC    Saturation     Uniform           4   81.77083  4.3385059
+14    GC    Saturation     Uniform           8   96.27976  3.7206632
+15    GC    Saturation     Uniform          16   99.33036  1.2501012
+16    GC    Saturation     Uniform          32   98.95833  1.6455784
+17    MC Concentration Homogeneous           4   83.75744  0.9141107
+18    MC Concentration Homogeneous           8   83.34821  1.0703651
+19    MC Concentration Homogeneous          16   83.58631  0.9377868
+20    MC Concentration Homogeneous          32   83.79464  0.9356254
+21    MC Concentration     Uniform           4   87.20238  3.1497039
+22    MC Concentration     Uniform           8   95.23810  2.1104887
+23    MC Concentration     Uniform          16   97.09821  2.0481109
+24    MC Concentration     Uniform          32   97.91667  1.3118409
+25    MC    Saturation Homogeneous           4   58.63839  1.1504485
+26    MC    Saturation Homogeneous           8   58.48214  1.3651601
+27    MC    Saturation Homogeneous          16   58.48214  1.1642520
+28    MC    Saturation Homogeneous          32   58.66071  1.2582736
+29    MC    Saturation     Uniform           4   86.60714  3.2290540
+30    MC    Saturation     Uniform           8   92.48512  1.6203945
+31    MC    Saturation     Uniform          16   98.88393  1.3286139
+32    MC    Saturation     Uniform          32   94.56845  5.2225874
+
+
+
+Figure 5 (Combined Utilization by Condition)
+**************************
+[[1]]
+ model term                          df1 df2 F.ratio p.value
+ Layer                                 1 441 476.183  <.0001
+ Condition                             3 441 559.527  <.0001
+ Duplication                           3 441  91.858  <.0001
+ Session                               1 441 177.808  <.0001
+ Layer:Condition                       3 441  17.085  <.0001
+ Layer:Duplication                     3 441   3.314  0.0200
+ Layer:Session                         1 441  22.519  <.0001
+ Condition:Duplication                 9 441  21.523  <.0001
+ Condition:Session                     3 441  44.078  <.0001
+ Duplication:Session                   3 441   2.041  0.1074
+ Layer:Condition:Duplication           9 441   3.765  0.0001
+ Layer:Condition:Session               3 441   4.683  0.0031
+ Layer:Duplication:Session             3 441   4.212  0.0059
+ Condition:Duplication:Session         9 441   8.261  <.0001
+ Layer:Condition:Duplication:Session   9 441   2.721  0.0043
+
+
+
+[[1]]
+Duplication = 4, Layer = GC:
+ contrast               estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform     10.47 0.716 441  14.615  <.0001
+ Homogeneous - Scaled       2.19 0.716 441   3.057  0.0126
+ Homogeneous - Adaptive    -4.11 0.716 441  -5.735  <.0001
+ Uniform - Scaled          -8.28 0.716 441 -11.558  <.0001
+ Uniform - Adaptive       -14.57 0.716 441 -20.350  <.0001
+ Scaled - Adaptive         -6.30 0.716 441  -8.792  <.0001
+
+Duplication = 8, Layer = GC:
+ contrast               estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform     10.06 0.716 441  14.049  <.0001
+ Homogeneous - Scaled       6.79 0.716 441   9.482  <.0001
+ Homogeneous - Adaptive     2.80 0.716 441   3.906  0.0006
+ Uniform - Scaled          -3.27 0.716 441  -4.567  <.0001
+ Uniform - Adaptive        -7.26 0.716 441 -10.143  <.0001
+ Scaled - Adaptive         -3.99 0.716 441  -5.576  <.0001
+
+Duplication = 16, Layer = GC:
+ contrast               estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform     10.78 0.716 441  15.056  <.0001
+ Homogeneous - Scaled       8.30 0.716 441  11.584  <.0001
+ Homogeneous - Adaptive     5.08 0.716 441   7.096  <.0001
+ Uniform - Scaled          -2.49 0.716 441  -3.472  0.0032
+ Uniform - Adaptive        -5.70 0.716 441  -7.960  <.0001
+ Scaled - Adaptive         -3.21 0.716 441  -4.488  0.0001
+
+Duplication = 32, Layer = GC:
+ contrast               estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform     10.22 0.716 441  14.268  <.0001
+ Homogeneous - Scaled       8.71 0.716 441  12.168  <.0001
+ Homogeneous - Adaptive     5.77 0.716 441   8.063  <.0001
+ Uniform - Scaled          -1.50 0.716 441  -2.101  0.1544
+ Uniform - Adaptive        -4.44 0.716 441  -6.205  <.0001
+ Scaled - Adaptive         -2.94 0.716 441  -4.104  0.0003
+
+Duplication = 4, Layer = MC:
+ contrast               estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform      8.16 0.716 441  11.398  <.0001
+ Homogeneous - Scaled       3.22 0.716 441   4.497  0.0001
+ Homogeneous - Adaptive     1.88 0.716 441   2.625  0.0442
+ Uniform - Scaled          -4.94 0.716 441  -6.901  <.0001
+ Uniform - Adaptive        -6.28 0.716 441  -8.773  <.0001
+ Scaled - Adaptive         -1.34 0.716 441  -1.872  0.2416
+
+Duplication = 8, Layer = MC:
+ contrast               estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform      9.46 0.716 441  13.211  <.0001
+ Homogeneous - Scaled       7.54 0.716 441  10.535  <.0001
+ Homogeneous - Adaptive     4.94 0.716 441   6.896  <.0001
+ Uniform - Scaled          -1.92 0.716 441  -2.677  0.0385
+ Uniform - Adaptive        -4.52 0.716 441  -6.315  <.0001
+ Scaled - Adaptive         -2.61 0.716 441  -3.638  0.0017
+
+Duplication = 16, Layer = MC:
+ contrast               estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform      9.95 0.716 441  13.891  <.0001
+ Homogeneous - Scaled       8.29 0.716 441  11.575  <.0001
+ Homogeneous - Adaptive     6.36 0.716 441   8.877  <.0001
+ Uniform - Scaled          -1.66 0.716 441  -2.316  0.0959
+ Uniform - Adaptive        -3.59 0.716 441  -5.014  <.0001
+ Scaled - Adaptive         -1.93 0.716 441  -2.697  0.0364
+
+Duplication = 32, Layer = MC:
+ contrast               estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform     10.17 0.716 441  14.200  <.0001
+ Homogeneous - Scaled       8.69 0.716 441  12.135  <.0001
+ Homogeneous - Adaptive     6.59 0.716 441   9.206  <.0001
+ Uniform - Scaled          -1.48 0.716 441  -2.065  0.1663
+ Uniform - Adaptive        -3.58 0.716 441  -4.995  <.0001
+ Scaled - Adaptive         -2.10 0.716 441  -2.930  0.0187
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+P value adjustment: tukey method for comparing a family of 4 estimates
+
+
+[[1]]
+   Layer       Session   Condition Duplication Utilization.m Utilization.s
+1     GC Concentration Homogeneous           4    11.6864796   3.651219251
+2     GC Concentration Homogeneous           8    11.1998716   3.236800180
+3     GC Concentration Homogeneous          16    11.1747784   3.074444542
+4     GC Concentration Homogeneous          32    11.2567832   3.117946700
+5     GC Concentration     Uniform           4     3.8794498   1.321959286
+6     GC Concentration     Uniform           8     3.9425422   0.916368666
+7     GC Concentration     Uniform          16     3.3130695   1.508523858
+8     GC Concentration     Uniform          32     4.5558099   1.553856109
+9     GC Concentration      Scaled           4    11.0542651   3.902302178
+10    GC Concentration      Scaled           8     6.5175693   2.276423650
+11    GC Concentration      Scaled          16     5.4789099   1.983435330
+12    GC Concentration      Scaled          32     5.2630888   1.550317777
+13    GC Concentration    Adaptive           4    22.7729006   6.131622727
+14    GC Concentration    Adaptive           8    10.2783537   4.272892392
+15    GC Concentration    Adaptive          16     7.2019658   1.918027423
+16    GC Concentration    Adaptive          32     6.4008027   1.675925721
+17    GC    Saturation Homogeneous           4    16.9932849   0.840534859
+18    GC    Saturation Homogeneous           8    16.8270980   0.710959865
+19    GC    Saturation Homogeneous          16    16.7836085   0.678076916
+20    GC    Saturation Homogeneous          32    16.7494453   0.763515635
+21    GC    Saturation     Uniform           4     3.8677055   0.676724556
+22    GC    Saturation     Uniform           8     3.9619896   1.071082407
+23    GC    Saturation     Uniform          16     3.0805032   1.108177677
+24    GC    Saturation     Uniform          32     3.0137429   1.135873255
+25    GC    Saturation      Scaled           4    13.2470778   4.220504491
+26    GC    Saturation      Scaled           8     7.9288069   1.765918795
+27    GC    Saturation      Scaled          16     5.8876204   1.421716172
+28    GC    Saturation      Scaled          32     5.3154515   1.538495658
+29    GC    Saturation    Adaptive           4    14.1211373   7.698267568
+30    GC    Saturation    Adaptive           8    12.1545723   4.242918981
+31    GC    Saturation    Adaptive          16    10.5922558   3.266749874
+32    GC    Saturation    Adaptive          32    10.0565545   2.680447304
+33    MC Concentration Homogeneous           4     7.8241481   0.074457813
+34    MC Concentration Homogeneous           8     7.8241455   0.074398295
+35    MC Concentration Homogeneous          16     7.8241481   0.074457813
+36    MC Concentration Homogeneous          32     7.8241481   0.074457813
+37    MC Concentration     Uniform           4     2.2449675   0.030675823
+38    MC Concentration     Uniform           8     0.9603674   0.021103470
+39    MC Concentration     Uniform          16     0.7374115   0.010411331
+40    MC Concentration     Uniform          32     0.5915436   0.006409456
+41    MC Concentration      Scaled           4     4.5037998   0.078281626
+42    MC Concentration      Scaled           8     1.7612007   0.062733902
+43    MC Concentration      Scaled          16     1.2056297   0.061771946
+44    MC Concentration      Scaled          32     0.9338146   0.070907840
+45    MC Concentration    Adaptive           4     7.7196508   0.416014399
+46    MC Concentration    Adaptive           8     3.5511773   0.230092824
+47    MC Concentration    Adaptive          16     2.3014912   0.198062336
+48    MC Concentration    Adaptive          32     2.0654764   0.131475482
+49    MC    Saturation Homogeneous           4    13.5538400   0.016201584
+50    MC    Saturation Homogeneous           8    13.5538400   0.016201584
+51    MC    Saturation Homogeneous          16    13.5538400   0.016201584
+52    MC    Saturation Homogeneous          32    13.5538400   0.016201584
+53    MC    Saturation     Uniform           4     2.8078563   0.050181508
+54    MC    Saturation     Uniform           8     1.4949127   0.040691747
+55    MC    Saturation     Uniform          16     0.7448455   0.022611407
+56    MC    Saturation     Uniform          32     0.4473467   0.017835972
+57    MC    Saturation      Scaled           4    10.4328688   0.274201495
+58    MC    Saturation      Scaled           8     4.5279364   0.123755745
+59    MC    Saturation      Scaled          16     3.5940956   0.053574454
+60    MC    Saturation      Scaled          32     3.0626188   0.061640575
+61    MC    Saturation    Adaptive           4     9.8984858   1.492510947
+62    MC    Saturation    Adaptive           8     7.9492841   0.750913344
+63    MC    Saturation    Adaptive          16     6.3616248   0.830858088
+64    MC    Saturation    Adaptive          32     6.1271685   0.647673310
+
+
+
+Figure 5 (Combined Utilization by Duplication)
+**************************
+[[1]]
+ model term                          df1 df2 F.ratio p.value
+ Layer                                 1 441 476.183  <.0001
+ Condition                             3 441 559.527  <.0001
+ Duplication                           3 441  91.858  <.0001
+ Session                               1 441 177.808  <.0001
+ Layer:Condition                       3 441  17.085  <.0001
+ Layer:Duplication                     3 441   3.314  0.0200
+ Layer:Session                         1 441  22.519  <.0001
+ Condition:Duplication                 9 441  21.523  <.0001
+ Condition:Session                     3 441  44.078  <.0001
+ Duplication:Session                   3 441   2.041  0.1074
+ Layer:Condition:Duplication           9 441   3.765  0.0001
+ Layer:Condition:Session               3 441   4.683  0.0031
+ Layer:Duplication:Session             3 441   4.212  0.0059
+ Condition:Duplication:Session         9 441   8.261  <.0001
+ Layer:Condition:Duplication:Session   9 441   2.721  0.0043
+
+
+
+[[1]]
+Condition = Homogeneous, Layer = GC:
+ contrast                       estimate    SE  df t.ratio p.value
+ Duplication8 - Duplication4   -0.326397 0.716 441  -0.456  0.9423
+ Duplication16 - Duplication8  -0.034291 0.716 441  -0.048  0.9999
+ Duplication32 - Duplication16  0.023921 0.716 441   0.033  1.0000
+
+Condition = Uniform, Layer = GC:
+ contrast                       estimate    SE  df t.ratio p.value
+ Duplication8 - Duplication4    0.078688 0.716 441   0.110  0.9991
+ Duplication16 - Duplication8  -0.755480 0.716 441  -1.055  0.5961
+ Duplication32 - Duplication16  0.587990 0.716 441   0.821  0.7546
+
+Condition = Scaled, Layer = GC:
+ contrast                       estimate    SE  df t.ratio p.value
+ Duplication8 - Duplication4   -4.927483 0.716 441  -6.881  <.0001
+ Duplication16 - Duplication8  -1.539923 0.716 441  -2.150  0.0854
+ Duplication32 - Duplication16 -0.393995 0.716 441  -0.550  0.9053
+
+Condition = Adaptive, Layer = GC:
+ contrast                       estimate    SE  df t.ratio p.value
+ Duplication8 - Duplication4   -7.230556 0.716 441 -10.096  <.0001
+ Duplication16 - Duplication8  -2.319352 0.716 441  -3.239  0.0037
+ Duplication32 - Duplication16 -0.668432 0.716 441  -0.933  0.6798
+
+Condition = Homogeneous, Layer = MC:
+ contrast                       estimate    SE  df t.ratio p.value
+ Duplication8 - Duplication4   -0.000001 0.716 441   0.000  1.0000
+ Duplication16 - Duplication8   0.000001 0.716 441   0.000  1.0000
+ Duplication32 - Duplication16  0.000000 0.716 441   0.000  1.0000
+
+Condition = Uniform, Layer = MC:
+ contrast                       estimate    SE  df t.ratio p.value
+ Duplication8 - Duplication4   -1.298772 0.716 441  -1.814  0.1779
+ Duplication16 - Duplication8  -0.486512 0.716 441  -0.679  0.8404
+ Duplication32 - Duplication16 -0.221683 0.716 441  -0.310  0.9803
+
+Condition = Scaled, Layer = MC:
+ contrast                       estimate    SE  df t.ratio p.value
+ Duplication8 - Duplication4   -4.323766 0.716 441  -6.038  <.0001
+ Duplication16 - Duplication8  -0.744706 0.716 441  -1.040  0.6066
+ Duplication32 - Duplication16 -0.401646 0.716 441  -0.561  0.9006
+
+Condition = Adaptive, Layer = MC:
+ contrast                       estimate    SE  df t.ratio p.value
+ Duplication8 - Duplication4   -3.058838 0.716 441  -4.271  0.0001
+ Duplication16 - Duplication8  -1.418673 0.716 441  -1.981  0.1250
+ Duplication32 - Duplication16 -0.235236 0.716 441  -0.328  0.9766
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+P value adjustment: mvt method for 3 tests
+
+
+[[1]]
+   Duplication   Condition Layer Utilization.m Utilization.s
+1            4 Homogeneous    GC    14.3398823    3.74979143
+2            4 Homogeneous    MC    10.6889941    2.95925806
+3            4     Uniform    GC     3.8735776    1.01453697
+4            4     Uniform    MC     2.5264119    0.29343818
+5            4      Scaled    GC    12.1506715    4.08671060
+6            4      Scaled    MC     7.4683343    3.06794871
+7            4    Adaptive    GC    18.4470189    8.07231019
+8            4    Adaptive    MC     8.8090683    1.54475210
+9            8 Homogeneous    GC    14.0134848    3.68364930
+10           8 Homogeneous    MC    10.6889928    2.95925872
+11           8     Uniform    GC     3.9522659    0.96298689
+12           8     Uniform    MC     1.2276401    0.27780844
+13           8      Scaled    GC     7.2231881    2.09873587
+14           8      Scaled    MC     3.1445685    1.43187667
+15           8    Adaptive    GC    11.2164630    4.22611391
+16           8    Adaptive    MC     5.7502307    2.33368192
+17          16 Homogeneous    GC    13.9791935    3.60758354
+18          16 Homogeneous    MC    10.6889941    2.95925806
+19          16     Uniform    GC     3.1967863    1.28432245
+20          16     Uniform    MC     0.7411285    0.01743323
+21          16      Scaled    GC     5.6832652    1.68038141
+22          16      Scaled    MC     2.3998627    1.23466271
+23          16    Adaptive    GC     8.8971108    3.12441625
+24          16    Adaptive    MC     4.3315580    2.17632133
+25          32 Homogeneous    GC    14.0031143    3.58523995
+26          32 Homogeneous    MC    10.6889941    2.95925806
+27          32     Uniform    GC     3.7847764    1.53719702
+28          32     Uniform    MC     0.5194452    0.07558018
+29          32      Scaled    GC     5.2892702    1.49229457
+30          32      Scaled    MC     1.9982167    1.10118183
+31          32    Adaptive    GC     8.2286786    2.86836490
+32          32    Adaptive    MC     4.0963225    2.14548730
+
+
+
+Figure 5 (Combined Accuracy by Condition)
+**************************
+[[1]]
+ model term                          df1 df2  F.ratio p.value
+ Layer                                 1 441    5.805  0.0164
+ Condition                             3 441 3298.391  <.0001
+ Duplication                           3 441  179.135  <.0001
+ Session                               1 441  555.771  <.0001
+ Layer:Condition                       3 441    6.572  0.0002
+ Layer:Duplication                     3 441    5.944  0.0006
+ Layer:Session                         1 441    0.042  0.8382
+ Condition:Duplication                 9 441   28.307  <.0001
+ Condition:Session                     3 441  937.419  <.0001
+ Duplication:Session                   3 441    3.080  0.0273
+ Layer:Condition:Duplication           9 441    1.656  0.0974
+ Layer:Condition:Session               3 441    1.498  0.2143
+ Layer:Duplication:Session             3 441    0.047  0.9863
+ Condition:Duplication:Session         9 441    7.022  <.0001
+ Layer:Condition:Duplication:Session   9 441    2.719  0.0043
+
+
+
+[[1]]
+Duplication = 4, Layer = GC:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform   -16.064 0.86 441 -18.669  <.0001
+ Homogeneous - Scaled    -22.202 0.86 441 -25.802  <.0001
+ Homogeneous - Adaptive  -22.016 0.86 441 -25.586  <.0001
+ Uniform - Scaled         -6.138 0.86 441  -7.134  <.0001
+ Uniform - Adaptive       -5.952 0.86 441  -6.918  <.0001
+ Scaled - Adaptive         0.186 0.86 441   0.216  0.9964
+
+Duplication = 8, Layer = GC:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform   -26.775 0.86 441 -31.116  <.0001
+ Homogeneous - Scaled    -26.179 0.86 441 -30.424  <.0001
+ Homogeneous - Adaptive  -25.472 0.86 441 -29.603  <.0001
+ Uniform - Scaled          0.595 0.86 441   0.692  0.9002
+ Uniform - Adaptive        1.302 0.86 441   1.513  0.4304
+ Scaled - Adaptive         0.707 0.86 441   0.821  0.8443
+
+Duplication = 16, Layer = GC:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform   -28.869 0.86 441 -33.550  <.0001
+ Homogeneous - Scaled    -28.088 0.86 441 -32.642  <.0001
+ Homogeneous - Adaptive  -27.567 0.86 441 -32.037  <.0001
+ Uniform - Scaled          0.781 0.86 441   0.908  0.8006
+ Uniform - Adaptive        1.302 0.86 441   1.513  0.4304
+ Scaled - Adaptive         0.521 0.86 441   0.605  0.9304
+
+Duplication = 32, Layer = GC:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform   -28.884 0.86 441 -33.567  <.0001
+ Homogeneous - Scaled    -27.545 0.86 441 -32.011  <.0001
+ Homogeneous - Adaptive  -28.586 0.86 441 -33.222  <.0001
+ Uniform - Scaled          1.339 0.86 441   1.556  0.4048
+ Uniform - Adaptive        0.298 0.86 441   0.346  0.9858
+ Scaled - Adaptive        -1.042 0.86 441  -1.211  0.6204
+
+Duplication = 4, Layer = MC:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform   -15.707 0.86 441 -18.254  <.0001
+ Homogeneous - Scaled    -20.915 0.86 441 -24.307  <.0001
+ Homogeneous - Adaptive  -20.171 0.86 441 -23.442  <.0001
+ Uniform - Scaled         -5.208 0.86 441  -6.053  <.0001
+ Uniform - Adaptive       -4.464 0.86 441  -5.188  <.0001
+ Scaled - Adaptive         0.744 0.86 441   0.865  0.8231
+
+Duplication = 8, Layer = MC:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform   -22.946 0.86 441 -26.667  <.0001
+ Homogeneous - Scaled    -26.667 0.86 441 -30.991  <.0001
+ Homogeneous - Adaptive  -23.616 0.86 441 -27.445  <.0001
+ Uniform - Scaled         -3.720 0.86 441  -4.323  0.0001
+ Uniform - Adaptive       -0.670 0.86 441  -0.778  0.8643
+ Scaled - Adaptive         3.051 0.86 441   3.545  0.0024
+
+Duplication = 16, Layer = MC:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform   -26.957 0.86 441 -31.328  <.0001
+ Homogeneous - Scaled    -25.543 0.86 441 -29.685  <.0001
+ Homogeneous - Adaptive  -25.766 0.86 441 -29.944  <.0001
+ Uniform - Scaled          1.414 0.86 441   1.643  0.3556
+ Uniform - Adaptive        1.190 0.86 441   1.384  0.5104
+ Scaled - Adaptive        -0.223 0.86 441  -0.259  0.9939
+
+Duplication = 32, Layer = MC:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform   -25.015 0.86 441 -29.071  <.0001
+ Homogeneous - Scaled    -25.275 0.86 441 -29.374  <.0001
+ Homogeneous - Adaptive  -25.536 0.86 441 -29.676  <.0001
+ Uniform - Scaled         -0.260 0.86 441  -0.303  0.9904
+ Uniform - Adaptive       -0.521 0.86 441  -0.605  0.9304
+ Scaled - Adaptive        -0.260 0.86 441  -0.303  0.9904
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+P value adjustment: tukey method for comparing a family of 4 estimates
+
+
+[[1]]
+   Layer       Session   Condition Duplication Accuracy.m Accuracy.s
+1     GC Concentration Homogeneous           4   79.94048  0.9470514
+2     GC Concentration Homogeneous           8   81.59970  1.5431770
+3     GC Concentration Homogeneous          16   81.39137  1.5625709
+4     GC Concentration Homogeneous          32   81.81548  1.0975648
+5     GC Concentration     Uniform           4   87.05357  4.5192198
+6     GC Concentration     Uniform           8   95.53571  2.9676749
+7     GC Concentration     Uniform          16   97.17262  2.4593801
+8     GC Concentration     Uniform          32   97.61905  1.5586992
+9     GC Concentration      Scaled           4   87.27679  2.8800369
+10    GC Concentration      Scaled           8   93.45238  2.8635133
+11    GC Concentration      Scaled          16   96.57738  3.1295521
+12    GC Concentration      Scaled          32   97.02381  1.6835876
+13    GC Concentration    Adaptive           4   90.47619  3.8837372
+14    GC Concentration    Adaptive           8   92.18750  3.5634477
+15    GC Concentration    Adaptive          16   96.65179  2.7542686
+16    GC Concentration    Adaptive          32   97.76786  2.5403689
+17    GC    Saturation Homogeneous           4   56.75595  0.9728872
+18    GC    Saturation Homogeneous           8   56.66667  0.7655895
+19    GC    Saturation Homogeneous          16   57.37351  1.0903644
+20    GC    Saturation Homogeneous          32   56.99405  0.8296810
+21    GC    Saturation     Uniform           4   81.77083  4.3385059
+22    GC    Saturation     Uniform           8   96.27976  3.7206632
+23    GC    Saturation     Uniform          16   99.33036  1.2501012
+24    GC    Saturation     Uniform          32   98.95833  1.6455784
+25    GC    Saturation      Scaled           4   93.82440  4.6319152
+26    GC    Saturation      Scaled           8   97.17262  3.4962322
+27    GC    Saturation      Scaled          16   98.36310  1.4139702
+28    GC    Saturation      Scaled          32   96.87500  2.0059738
+29    GC    Saturation    Adaptive           4   90.25298  3.8171891
+30    GC    Saturation    Adaptive           8   97.02381  3.4561907
+31    GC    Saturation    Adaptive          16   97.24702  3.2901955
+32    GC    Saturation    Adaptive          32   98.21429  2.2271770
+33    MC Concentration Homogeneous           4   83.75744  0.9141107
+34    MC Concentration Homogeneous           8   83.34821  1.0703651
+35    MC Concentration Homogeneous          16   83.58631  0.9377868
+36    MC Concentration Homogeneous          32   83.79464  0.9356254
+37    MC Concentration     Uniform           4   87.20238  3.1497039
+38    MC Concentration     Uniform           8   95.23810  2.1104887
+39    MC Concentration     Uniform          16   97.09821  2.0481109
+40    MC Concentration     Uniform          32   97.91667  1.3118409
+41    MC Concentration      Scaled           4   88.91369  3.0507249
+42    MC Concentration      Scaled           8   95.31250  1.7262638
+43    MC Concentration      Scaled          16   94.64286  1.5908407
+44    MC Concentration      Scaled          32   95.31250  2.0232467
+45    MC Concentration    Adaptive           4   92.63393  3.5277588
+46    MC Concentration    Adaptive           8   91.51786  3.8279476
+47    MC Concentration    Adaptive          16   96.94940  1.6966896
+48    MC Concentration    Adaptive          32   95.31250  2.9751274
+49    MC    Saturation Homogeneous           4   58.63839  1.1504485
+50    MC    Saturation Homogeneous           8   58.48214  1.3651601
+51    MC    Saturation Homogeneous          16   58.48214  1.1642520
+52    MC    Saturation Homogeneous          32   58.66071  1.2582736
+53    MC    Saturation     Uniform           4   86.60714  3.2290540
+54    MC    Saturation     Uniform           8   92.48512  1.6203945
+55    MC    Saturation     Uniform          16   98.88393  1.3286139
+56    MC    Saturation     Uniform          32   94.56845  5.2225874
+57    MC    Saturation      Scaled           4   95.31250  2.3475010
+58    MC    Saturation      Scaled           8   99.85119  0.2755417
+59    MC    Saturation      Scaled          16   98.51190  1.1471716
+60    MC    Saturation      Scaled          32   97.69345  4.2021991
+61    MC    Saturation    Adaptive           4   90.10417  4.1719779
+62    MC    Saturation    Adaptive           8   97.54464  2.6128076
+63    MC    Saturation    Adaptive          16   96.65179  2.8975582
+64    MC    Saturation    Adaptive          32   98.21429  2.7184298
+
+
+
+Figure 5 (Combined Accuracy by Duplication)
+**************************
+[[1]]
+ model term                          df1 df2  F.ratio p.value
+ Layer                                 1 441    5.805  0.0164
+ Condition                             3 441 3298.391  <.0001
+ Duplication                           3 441  179.135  <.0001
+ Session                               1 441  555.771  <.0001
+ Layer:Condition                       3 441    6.572  0.0002
+ Layer:Duplication                     3 441    5.944  0.0006
+ Layer:Session                         1 441    0.042  0.8382
+ Condition:Duplication                 9 441   28.307  <.0001
+ Condition:Session                     3 441  937.419  <.0001
+ Duplication:Session                   3 441    3.080  0.0273
+ Layer:Condition:Duplication           9 441    1.656  0.0974
+ Layer:Condition:Session               3 441    1.498  0.2143
+ Layer:Duplication:Session             3 441    0.047  0.9863
+ Condition:Duplication:Session         9 441    7.022  <.0001
+ Layer:Condition:Duplication:Session   9 441    2.719  0.0043
+
+
+
+[[1]]
+Condition = Homogeneous, Layer = GC:
+ contrast                      estimate   SE  df t.ratio p.value
+ Duplication8 - Duplication4     0.7850 0.86 441   0.912  0.6941
+ Duplication16 - Duplication8    0.2493 0.86 441   0.290  0.9837
+ Duplication32 - Duplication16   0.0223 0.86 441   0.026  1.0000
+
+Condition = Uniform, Layer = GC:
+ contrast                      estimate   SE  df t.ratio p.value
+ Duplication8 - Duplication4    11.4955 0.86 441  13.360  <.0001
+ Duplication16 - Duplication8    2.3438 0.86 441   2.724  0.0193
+ Duplication32 - Duplication16   0.0372 0.86 441   0.043  0.9999
+
+Condition = Scaled, Layer = GC:
+ contrast                      estimate   SE  df t.ratio p.value
+ Duplication8 - Duplication4     4.7619 0.86 441   5.534  <.0001
+ Duplication16 - Duplication8    2.1577 0.86 441   2.508  0.0342
+ Duplication32 - Duplication16  -0.5208 0.86 441  -0.605  0.8795
+
+Condition = Adaptive, Layer = GC:
+ contrast                      estimate   SE  df t.ratio p.value
+ Duplication8 - Duplication4     4.2411 0.86 441   4.929  <.0001
+ Duplication16 - Duplication8    2.3438 0.86 441   2.724  0.0194
+ Duplication32 - Duplication16   1.0417 0.86 441   1.211  0.4907
+
+Condition = Homogeneous, Layer = MC:
+ contrast                      estimate   SE  df t.ratio p.value
+ Duplication8 - Duplication4    -0.2827 0.86 441  -0.329  0.9766
+ Duplication16 - Duplication8    0.1190 0.86 441   0.138  0.9981
+ Duplication32 - Duplication16   0.1935 0.86 441   0.225  0.9922
+
+Condition = Uniform, Layer = MC:
+ contrast                      estimate   SE  df t.ratio p.value
+ Duplication8 - Duplication4     6.9568 0.86 441   8.085  <.0001
+ Duplication16 - Duplication8    4.1295 0.86 441   4.799  <.0001
+ Duplication32 - Duplication16  -1.7485 0.86 441  -2.032  0.1125
+
+Condition = Scaled, Layer = MC:
+ contrast                      estimate   SE  df t.ratio p.value
+ Duplication8 - Duplication4     5.4688 0.86 441   6.356  <.0001
+ Duplication16 - Duplication8   -1.0045 0.86 441  -1.167  0.5195
+ Duplication32 - Duplication16  -0.0744 0.86 441  -0.086  0.9995
+
+Condition = Adaptive, Layer = MC:
+ contrast                      estimate   SE  df t.ratio p.value
+ Duplication8 - Duplication4     3.1622 0.86 441   3.675  0.0007
+ Duplication16 - Duplication8    2.2693 0.86 441   2.637  0.0242
+ Duplication32 - Duplication16  -0.0372 0.86 441  -0.043  0.9999
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+P value adjustment: mvt method for 3 tests
+
+
+[[1]]
+   Layer       Session   Condition Duplication Accuracy.m Accuracy.s
+1     GC Concentration Homogeneous           4   79.94048  0.9470514
+2     GC Concentration Homogeneous           8   81.59970  1.5431770
+3     GC Concentration Homogeneous          16   81.39137  1.5625709
+4     GC Concentration Homogeneous          32   81.81548  1.0975648
+5     GC Concentration     Uniform           4   87.05357  4.5192198
+6     GC Concentration     Uniform           8   95.53571  2.9676749
+7     GC Concentration     Uniform          16   97.17262  2.4593801
+8     GC Concentration     Uniform          32   97.61905  1.5586992
+9     GC Concentration      Scaled           4   87.27679  2.8800369
+10    GC Concentration      Scaled           8   93.45238  2.8635133
+11    GC Concentration      Scaled          16   96.57738  3.1295521
+12    GC Concentration      Scaled          32   97.02381  1.6835876
+13    GC Concentration    Adaptive           4   90.47619  3.8837372
+14    GC Concentration    Adaptive           8   92.18750  3.5634477
+15    GC Concentration    Adaptive          16   96.65179  2.7542686
+16    GC Concentration    Adaptive          32   97.76786  2.5403689
+17    GC    Saturation Homogeneous           4   56.75595  0.9728872
+18    GC    Saturation Homogeneous           8   56.66667  0.7655895
+19    GC    Saturation Homogeneous          16   57.37351  1.0903644
+20    GC    Saturation Homogeneous          32   56.99405  0.8296810
+21    GC    Saturation     Uniform           4   81.77083  4.3385059
+22    GC    Saturation     Uniform           8   96.27976  3.7206632
+23    GC    Saturation     Uniform          16   99.33036  1.2501012
+24    GC    Saturation     Uniform          32   98.95833  1.6455784
+25    GC    Saturation      Scaled           4   93.82440  4.6319152
+26    GC    Saturation      Scaled           8   97.17262  3.4962322
+27    GC    Saturation      Scaled          16   98.36310  1.4139702
+28    GC    Saturation      Scaled          32   96.87500  2.0059738
+29    GC    Saturation    Adaptive           4   90.25298  3.8171891
+30    GC    Saturation    Adaptive           8   97.02381  3.4561907
+31    GC    Saturation    Adaptive          16   97.24702  3.2901955
+32    GC    Saturation    Adaptive          32   98.21429  2.2271770
+33    MC Concentration Homogeneous           4   83.75744  0.9141107
+34    MC Concentration Homogeneous           8   83.34821  1.0703651
+35    MC Concentration Homogeneous          16   83.58631  0.9377868
+36    MC Concentration Homogeneous          32   83.79464  0.9356254
+37    MC Concentration     Uniform           4   87.20238  3.1497039
+38    MC Concentration     Uniform           8   95.23810  2.1104887
+39    MC Concentration     Uniform          16   97.09821  2.0481109
+40    MC Concentration     Uniform          32   97.91667  1.3118409
+41    MC Concentration      Scaled           4   88.91369  3.0507249
+42    MC Concentration      Scaled           8   95.31250  1.7262638
+43    MC Concentration      Scaled          16   94.64286  1.5908407
+44    MC Concentration      Scaled          32   95.31250  2.0232467
+45    MC Concentration    Adaptive           4   92.63393  3.5277588
+46    MC Concentration    Adaptive           8   91.51786  3.8279476
+47    MC Concentration    Adaptive          16   96.94940  1.6966896
+48    MC Concentration    Adaptive          32   95.31250  2.9751274
+49    MC    Saturation Homogeneous           4   58.63839  1.1504485
+50    MC    Saturation Homogeneous           8   58.48214  1.3651601
+51    MC    Saturation Homogeneous          16   58.48214  1.1642520
+52    MC    Saturation Homogeneous          32   58.66071  1.2582736
+53    MC    Saturation     Uniform           4   86.60714  3.2290540
+54    MC    Saturation     Uniform           8   92.48512  1.6203945
+55    MC    Saturation     Uniform          16   98.88393  1.3286139
+56    MC    Saturation     Uniform          32   94.56845  5.2225874
+57    MC    Saturation      Scaled           4   95.31250  2.3475010
+58    MC    Saturation      Scaled           8   99.85119  0.2755417
+59    MC    Saturation      Scaled          16   98.51190  1.1471716
+60    MC    Saturation      Scaled          32   97.69345  4.2021991
+61    MC    Saturation    Adaptive           4   90.10417  4.1719779
+62    MC    Saturation    Adaptive           8   97.54464  2.6128076
+63    MC    Saturation    Adaptive          16   96.65179  2.8975582
+64    MC    Saturation    Adaptive          32   98.21429  2.7184298
+
+
+
+ET Discrimination Accuracy
+**************************
+ model term                    df1 df2 F.ratio p.value
+ Condition                       3 217   0.000  1.0000
+ Duplication                     3 217   0.000  1.0000
+ Session                         1 217  88.324  <.0001
+ Condition:Duplication           9 217   0.000  1.0000
+ Condition:Session               3 217   0.000  1.0000
+ Duplication:Session             3 217   0.000  1.0000
+ Condition:Duplication:Session   9 217   0.000  1.0000
+
+
+Duplication = 4:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform  1.41e-13 3.58 217   0.000  1.0000
+ Homogeneous - Scaled   1.41e-13 3.58 217   0.000  1.0000
+ Homogeneous - Adaptive 1.41e-13 3.58 217   0.000  1.0000
+ Uniform - Scaled       0.00e+00 3.58 217   0.000  1.0000
+ Uniform - Adaptive     0.00e+00 3.58 217   0.000  1.0000
+ Scaled - Adaptive      0.00e+00 3.58 217   0.000  1.0000
+
+Duplication = 8:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform  1.83e-13 3.58 217   0.000  1.0000
+ Homogeneous - Scaled   1.83e-13 3.58 217   0.000  1.0000
+ Homogeneous - Adaptive 1.83e-13 3.58 217   0.000  1.0000
+ Uniform - Scaled       0.00e+00 3.58 217   0.000  1.0000
+ Uniform - Adaptive     0.00e+00 3.58 217   0.000  1.0000
+ Scaled - Adaptive      0.00e+00 3.58 217   0.000  1.0000
+
+Duplication = 16:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform  1.83e-13 3.58 217   0.000  1.0000
+ Homogeneous - Scaled   1.83e-13 3.58 217   0.000  1.0000
+ Homogeneous - Adaptive 1.83e-13 3.58 217   0.000  1.0000
+ Uniform - Scaled       0.00e+00 3.58 217   0.000  1.0000
+ Uniform - Adaptive     0.00e+00 3.58 217   0.000  1.0000
+ Scaled - Adaptive      0.00e+00 3.58 217   0.000  1.0000
+
+Duplication = 32:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform  1.83e-13 3.58 217   0.000  1.0000
+ Homogeneous - Scaled   1.83e-13 3.58 217   0.000  1.0000
+ Homogeneous - Adaptive 1.83e-13 3.58 217   0.000  1.0000
+ Uniform - Scaled       0.00e+00 3.58 217   0.000  1.0000
+ Uniform - Adaptive     0.00e+00 3.58 217   0.000  1.0000
+ Scaled - Adaptive      0.00e+00 3.58 217   0.000  1.0000
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+P value adjustment: tukey method for comparing a family of 4 estimates
+
+         Session   Condition Duplication Accuracy.m Accuracy.s
+1  Concentration Homogeneous           4   84.07738   9.431687
+2  Concentration Homogeneous           8   84.07738   9.431687
+3  Concentration Homogeneous          16   84.07738   9.431687
+4  Concentration Homogeneous          32   84.07738   9.431687
+5  Concentration     Uniform           4   84.07738   9.431687
+6  Concentration     Uniform           8   84.07738   9.431687
+7  Concentration     Uniform          16   84.07738   9.431687
+8  Concentration     Uniform          32   84.07738   9.431687
+9  Concentration      Scaled           4   84.07738   9.431687
+10 Concentration      Scaled           8   84.07738   9.431687
+11 Concentration      Scaled          16   84.07738   9.431687
+12 Concentration      Scaled          32   84.07738   9.431687
+13 Concentration    Adaptive           4   84.07738   9.431687
+14 Concentration    Adaptive           8   84.07738   9.431687
+15 Concentration    Adaptive          16   84.07738   9.431687
+16 Concentration    Adaptive          32   84.07738   9.431687
+17    Saturation Homogeneous           4   72.17262  16.981806
+18    Saturation Homogeneous           8   72.17262  16.981806
+19    Saturation Homogeneous          16   72.17262  16.981806
+20    Saturation Homogeneous          32   72.17262  16.981806
+21    Saturation     Uniform           4   72.17262  16.981806
+22    Saturation     Uniform           8   72.17262  16.981806
+23    Saturation     Uniform          16   72.17262  16.981806
+24    Saturation     Uniform          32   72.17262  16.981806
+25    Saturation      Scaled           4   72.17262  16.981806
+26    Saturation      Scaled           8   72.17262  16.981806
+27    Saturation      Scaled          16   72.17262  16.981806
+28    Saturation      Scaled          32   72.17262  16.981806
+29    Saturation    Adaptive           4   72.17262  16.981806
+30    Saturation    Adaptive           8   72.17262  16.981806
+31    Saturation    Adaptive          16   72.17262  16.981806
+32    Saturation    Adaptive          32   72.17262  16.981806
+
+
+MC Discrimination Accuracy
+**************************
+ model term                    df1 df2 F.ratio p.value
+ Condition                       3 793  68.501  <.0001
+ Duplication                     3 793   1.154  0.3265
+ Session                         1 793   5.356  0.0209
+ Condition:Duplication           9 793   0.396  0.9371
+ Condition:Session               3 793  21.765  <.0001
+ Duplication:Session             3 793   0.023  0.9953
+ Condition:Duplication:Session   9 793   0.070  0.9999
+
+
+Duplication = 4:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform   -15.707 5.27 793  -2.982  0.0156
+ Homogeneous - Scaled    -20.915 5.27 793  -3.971  0.0005
+ Homogeneous - Adaptive  -20.171 5.27 793  -3.830  0.0008
+ Uniform - Scaled         -5.208 7.10 793  -0.733  0.8837
+ Uniform - Adaptive       -4.464 7.10 793  -0.629  0.9228
+ Scaled - Adaptive         0.744 7.10 793   0.105  0.9996
+
+Duplication = 8:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform   -22.946 5.27 793  -4.357  0.0001
+ Homogeneous - Scaled    -26.667 5.27 793  -5.063  <.0001
+ Homogeneous - Adaptive  -23.616 5.27 793  -4.484  <.0001
+ Uniform - Scaled         -3.720 7.10 793  -0.524  0.9533
+ Uniform - Adaptive       -0.670 7.10 793  -0.094  0.9997
+ Scaled - Adaptive         3.051 7.10 793   0.430  0.9734
+
+Duplication = 16:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform   -26.957 5.27 793  -5.118  <.0001
+ Homogeneous - Scaled    -25.543 5.27 793  -4.850  <.0001
+ Homogeneous - Adaptive  -25.766 5.27 793  -4.892  <.0001
+ Uniform - Scaled          1.414 7.10 793   0.199  0.9972
+ Uniform - Adaptive        1.190 7.10 793   0.168  0.9983
+ Scaled - Adaptive        -0.223 7.10 793  -0.031  1.0000
+
+Duplication = 32:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform   -25.015 5.27 793  -4.750  <.0001
+ Homogeneous - Scaled    -25.275 5.27 793  -4.799  <.0001
+ Homogeneous - Adaptive  -25.536 5.27 793  -4.849  <.0001
+ Uniform - Scaled         -0.260 7.10 793  -0.037  1.0000
+ Uniform - Adaptive       -0.521 7.10 793  -0.073  0.9999
+ Scaled - Adaptive        -0.260 7.10 793  -0.037  1.0000
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+P value adjustment: tukey method for comparing a family of 4 estimates
+
+         Session   Condition Duplication Accuracy.m Accuracy.s
+1  Concentration Homogeneous           4   83.75744 13.2715249
+2  Concentration Homogeneous           8   83.34821 12.9900065
+3  Concentration Homogeneous          16   83.58631 13.1447278
+4  Concentration Homogeneous          32   83.79464 13.3267574
+5  Concentration     Uniform           4   87.20238  3.1497039
+6  Concentration     Uniform           8   95.23810  2.1104887
+7  Concentration     Uniform          16   97.09821  2.0481109
+8  Concentration     Uniform          32   97.91667  1.3118409
+9  Concentration      Scaled           4   88.91369  3.0507249
+10 Concentration      Scaled           8   95.31250  1.7262638
+11 Concentration      Scaled          16   94.64286  1.5908407
+12 Concentration      Scaled          32   95.31250  2.0232467
+13 Concentration    Adaptive           4   92.63393  3.5277588
+14 Concentration    Adaptive           8   91.51786  3.8279476
+15 Concentration    Adaptive          16   96.94940  1.6966896
+16 Concentration    Adaptive          32   95.31250  2.9751274
+17    Saturation Homogeneous           4   58.63839 29.1216537
+18    Saturation Homogeneous           8   58.48214 28.9029919
+19    Saturation Homogeneous          16   58.48214 29.0582120
+20    Saturation Homogeneous          32   58.66071 29.0905133
+21    Saturation     Uniform           4   86.60714  3.2290540
+22    Saturation     Uniform           8   92.48512  1.6203945
+23    Saturation     Uniform          16   98.88393  1.3286139
+24    Saturation     Uniform          32   94.56845  5.2225874
+25    Saturation      Scaled           4   95.31250  2.3475010
+26    Saturation      Scaled           8   99.85119  0.2755417
+27    Saturation      Scaled          16   98.51190  1.1471716
+28    Saturation      Scaled          32   97.69345  4.2021991
+29    Saturation    Adaptive           4   90.10417  4.1719779
+30    Saturation    Adaptive           8   97.54464  2.6128076
+31    Saturation    Adaptive          16   96.65179  2.8975582
+32    Saturation    Adaptive          32   98.21429  2.7184298
+
+
+GC Discrimination Accuracy
+**************************
+ model term                    df1 df2 F.ratio p.value
+ Condition                       3 793  80.102  <.0001
+ Duplication                     3 793   2.339  0.0722
+ Session                         1 793   5.145  0.0236
+ Condition:Duplication           9 793   0.563  0.8278
+ Condition:Session               3 793  19.977  <.0001
+ Duplication:Session             3 793   0.036  0.9908
+ Condition:Duplication:Session   9 793   0.093  0.9997
+
+
+Duplication = 4:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform   -16.064 5.28 793  -3.042  0.0130
+ Homogeneous - Scaled    -22.202 5.28 793  -4.204  0.0002
+ Homogeneous - Adaptive  -22.016 5.28 793  -4.169  0.0002
+ Uniform - Scaled         -6.138 7.12 793  -0.862  0.8244
+ Uniform - Adaptive       -5.952 7.12 793  -0.836  0.8374
+ Scaled - Adaptive         0.186 7.12 793   0.026  1.0000
+
+Duplication = 8:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform   -26.775 5.28 793  -5.070  <.0001
+ Homogeneous - Scaled    -26.179 5.28 793  -4.957  <.0001
+ Homogeneous - Adaptive  -25.472 5.28 793  -4.823  <.0001
+ Uniform - Scaled          0.595 7.12 793   0.084  0.9998
+ Uniform - Adaptive        1.302 7.12 793   0.183  0.9978
+ Scaled - Adaptive         0.707 7.12 793   0.099  0.9996
+
+Duplication = 16:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform   -28.869 5.28 793  -5.467  <.0001
+ Homogeneous - Scaled    -28.088 5.28 793  -5.319  <.0001
+ Homogeneous - Adaptive  -27.567 5.28 793  -5.220  <.0001
+ Uniform - Scaled          0.781 7.12 793   0.110  0.9995
+ Uniform - Adaptive        1.302 7.12 793   0.183  0.9978
+ Scaled - Adaptive         0.521 7.12 793   0.073  0.9999
+
+Duplication = 32:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform   -28.884 5.28 793  -5.469  <.0001
+ Homogeneous - Scaled    -27.545 5.28 793  -5.216  <.0001
+ Homogeneous - Adaptive  -28.586 5.28 793  -5.413  <.0001
+ Uniform - Scaled          1.339 7.12 793   0.188  0.9976
+ Uniform - Adaptive        0.298 7.12 793   0.042  1.0000
+ Scaled - Adaptive        -1.042 7.12 793  -0.146  0.9989
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+P value adjustment: tukey method for comparing a family of 4 estimates
+
+         Session   Condition Duplication Accuracy.m Accuracy.s
+1  Concentration Homogeneous           4   79.94048  19.565738
+2  Concentration Homogeneous           8   81.59970  14.614153
+3  Concentration Homogeneous          16   81.39137  13.868915
+4  Concentration Homogeneous          32   81.81548  13.741943
+5  Concentration     Uniform           4   87.05357   4.519220
+6  Concentration     Uniform           8   95.53571   2.967675
+7  Concentration     Uniform          16   97.17262   2.459380
+8  Concentration     Uniform          32   97.61905   1.558699
+9  Concentration      Scaled           4   87.27679   2.880037
+10 Concentration      Scaled           8   93.45238   2.863513
+11 Concentration      Scaled          16   96.57738   3.129552
+12 Concentration      Scaled          32   97.02381   1.683588
+13 Concentration    Adaptive           4   90.47619   3.883737
+14 Concentration    Adaptive           8   92.18750   3.563448
+15 Concentration    Adaptive          16   96.65179   2.754269
+16 Concentration    Adaptive          32   97.76786   2.540369
+17    Saturation Homogeneous           4   56.75595  27.731219
+18    Saturation Homogeneous           8   56.66667  27.560117
+19    Saturation Homogeneous          16   57.37351  28.167748
+20    Saturation Homogeneous          32   56.99405  28.073970
+21    Saturation     Uniform           4   81.77083   4.338506
+22    Saturation     Uniform           8   96.27976   3.720663
+23    Saturation     Uniform          16   99.33036   1.250101
+24    Saturation     Uniform          32   98.95833   1.645578
+25    Saturation      Scaled           4   93.82440   4.631915
+26    Saturation      Scaled           8   97.17262   3.496232
+27    Saturation      Scaled          16   98.36310   1.413970
+28    Saturation      Scaled          32   96.87500   2.005974
+29    Saturation    Adaptive           4   90.25298   3.817189
+30    Saturation    Adaptive           8   97.02381   3.456191
+31    Saturation    Adaptive          16   97.24702   3.290196
+32    Saturation    Adaptive          32   98.21429   2.227177
+
+
+MC SD Utilization
+*****************
+ model term                    df1 df2 F.ratio p.value
+ Condition                       3 793  83.113  <.0001
+ Duplication                     3 793   4.929  0.0021
+ Session                         1 793  26.624  <.0001
+ Condition:Duplication           9 793   1.556  0.1243
+ Condition:Session               3 793   5.349  0.0012
+ Duplication:Session             3 793   0.057  0.9822
+ Condition:Duplication:Session   9 793   0.171  0.9968
+
+
+Duplication = 4:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform      8.16 1.49 793   5.461  <.0001
+ Homogeneous - Scaled       3.22 1.49 793   2.155  0.1371
+ Homogeneous - Adaptive     1.88 1.49 793   1.258  0.5903
+ Uniform - Scaled          -4.94 2.02 793  -2.452  0.0685
+ Uniform - Adaptive        -6.28 2.02 793  -3.117  0.0102
+ Scaled - Adaptive         -1.34 2.02 793  -0.665  0.9101
+
+Duplication = 8:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform      9.46 1.49 793   6.330  <.0001
+ Homogeneous - Scaled       7.54 1.49 793   5.047  <.0001
+ Homogeneous - Adaptive     4.94 1.49 793   3.304  0.0055
+ Uniform - Scaled          -1.92 2.02 793  -0.951  0.7772
+ Uniform - Adaptive        -4.52 2.02 793  -2.244  0.1125
+ Scaled - Adaptive         -2.61 2.02 793  -1.293  0.5678
+
+Duplication = 16:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform      9.95 1.49 793   6.655  <.0001
+ Homogeneous - Scaled       8.29 1.49 793   5.545  <.0001
+ Homogeneous - Adaptive     6.36 1.49 793   4.253  0.0001
+ Uniform - Scaled          -1.66 2.02 793  -0.823  0.8436
+ Uniform - Adaptive        -3.59 2.02 793  -1.781  0.2831
+ Scaled - Adaptive         -1.93 2.02 793  -0.958  0.7731
+
+Duplication = 32:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform     10.17 1.49 793   6.803  <.0001
+ Homogeneous - Scaled       8.69 1.49 793   5.814  <.0001
+ Homogeneous - Adaptive     6.59 1.49 793   4.410  0.0001
+ Uniform - Scaled          -1.48 2.02 793  -0.734  0.8835
+ Uniform - Adaptive        -3.58 2.02 793  -1.775  0.2863
+ Scaled - Adaptive         -2.10 2.02 793  -1.041  0.7254
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+P value adjustment: tukey method for comparing a family of 4 estimates
+
+     Condition Duplication Utilization.m Utilization.s
+1  Homogeneous           4    10.6889941    7.00657816
+2  Homogeneous           8    10.6889928    7.00658018
+3  Homogeneous          16    10.6889941    7.00657816
+4  Homogeneous          32    10.6889941    7.00657816
+5      Uniform           4     2.5264119    0.29343818
+6      Uniform           8     1.2276401    0.27780844
+7      Uniform          16     0.7411285    0.01743323
+8      Uniform          32     0.5194452    0.07558018
+9       Scaled           4     7.4683343    3.06794871
+10      Scaled           8     3.1445685    1.43187667
+11      Scaled          16     2.3998627    1.23466271
+12      Scaled          32     1.9982167    1.10118183
+13    Adaptive           4     8.8090683    1.54475210
+14    Adaptive           8     5.7502307    2.33368192
+15    Adaptive          16     4.3315580    2.17632133
+16    Adaptive          32     4.0963225    2.14548730
+
+
+GC SD Utilization
+*****************
+ model term                    df1 df2 F.ratio p.value
+ Condition                       3 793  27.466  <.0001
+ Duplication                     3 793   3.480  0.0156
+ Session                         1 793   1.977  0.1601
+ Condition:Duplication           9 793   1.354  0.2053
+ Condition:Session               3 793   3.553  0.0141
+ Duplication:Session             3 793   0.317  0.8135
+ Condition:Duplication:Session   9 793   0.448  0.9090
+
+
+Duplication = 4:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform     10.47 2.61 793   4.017  0.0004
+ Homogeneous - Scaled       2.19 2.61 793   0.840  0.8353
+ Homogeneous - Adaptive    -4.11 2.61 793  -1.576  0.3928
+ Uniform - Scaled          -8.28 3.51 793  -2.356  0.0867
+ Uniform - Adaptive       -14.57 3.51 793  -4.148  0.0002
+ Scaled - Adaptive         -6.30 3.51 793  -1.792  0.2779
+
+Duplication = 8:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform     10.06 2.61 793   3.861  0.0007
+ Homogeneous - Scaled       6.79 2.61 793   2.606  0.0460
+ Homogeneous - Adaptive     2.80 2.61 793   1.073  0.7059
+ Uniform - Scaled          -3.27 3.51 793  -0.931  0.7882
+ Uniform - Adaptive        -7.26 3.51 793  -2.068  0.1647
+ Scaled - Adaptive         -3.99 3.51 793  -1.137  0.6670
+
+Duplication = 16:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform     10.78 2.61 793   4.138  0.0002
+ Homogeneous - Scaled       8.30 2.61 793   3.184  0.0082
+ Homogeneous - Adaptive     5.08 2.61 793   1.950  0.2080
+ Uniform - Scaled          -2.49 3.51 793  -0.708  0.8941
+ Uniform - Adaptive        -5.70 3.51 793  -1.622  0.3665
+ Scaled - Adaptive         -3.21 3.51 793  -0.915  0.7970
+
+Duplication = 32:
+ contrast               estimate   SE  df t.ratio p.value
+ Homogeneous - Uniform     10.22 2.61 793   3.922  0.0006
+ Homogeneous - Scaled       8.71 2.61 793   3.344  0.0048
+ Homogeneous - Adaptive     5.77 2.61 793   2.216  0.1197
+ Uniform - Scaled          -1.50 3.51 793  -0.428  0.9736
+ Uniform - Adaptive        -4.44 3.51 793  -1.265  0.5857
+ Scaled - Adaptive         -2.94 3.51 793  -0.837  0.8370
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+P value adjustment: tukey method for comparing a family of 4 estimates
+
+     Condition Duplication Utilization.m Utilization.s
+1  Homogeneous           4     14.339882    11.8512291
+2  Homogeneous           8     14.013485    11.3295387
+3  Homogeneous          16     13.979193    11.2364542
+4  Homogeneous          32     14.003114    11.2420014
+5      Uniform           4      3.873578     1.0145370
+6      Uniform           8      3.952266     0.9629869
+7      Uniform          16      3.196786     1.2843224
+8      Uniform          32      3.784776     1.5371970
+9       Scaled           4     12.150671     4.0867106
+10      Scaled           8      7.223188     2.0987359
+11      Scaled          16      5.683265     1.6803814
+12      Scaled          32      5.289270     1.4922946
+13    Adaptive           4     18.447019     8.0723102
+14    Adaptive           8     11.216463     4.2261139
+15    Adaptive          16      8.897111     3.1244163
+16    Adaptive          32      8.228679     2.8683649
+
+
+MC Mean Utilization
+*****************
+ model term                    df1 df2 F.ratio p.value
+ Condition                       3 793   0.756  0.5192
+ Duplication                     3 793   0.726  0.5369
+ Session                         1 793   0.936  0.3336
+ Condition:Duplication           9 793   0.282  0.9797
+ Condition:Session               3 793   0.350  0.7892
+ Duplication:Session             3 793   0.060  0.9810
+ Condition:Duplication:Session   9 793   0.024  1.0000
+
+
+Duplication = 4:
+ contrast               estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform    -0.892  7.47 793  -0.119  0.9994
+ Homogeneous - Scaled    -11.090  7.47 793  -1.485  0.4473
+ Homogeneous - Adaptive   -2.062  7.47 793  -0.276  0.9926
+ Uniform - Scaled        -10.198 10.07 793  -1.012  0.7422
+ Uniform - Adaptive       -1.170 10.07 793  -0.116  0.9994
+ Scaled - Adaptive         9.028 10.07 793   0.896  0.8068
+
+Duplication = 8:
+ contrast               estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform    -0.129  7.47 793  -0.017  1.0000
+ Homogeneous - Scaled     -3.089  7.47 793  -0.414  0.9761
+ Homogeneous - Adaptive    3.538  7.47 793   0.474  0.9649
+ Uniform - Scaled         -2.960 10.07 793  -0.294  0.9912
+ Uniform - Adaptive        3.667 10.07 793   0.364  0.9835
+ Scaled - Adaptive         6.628 10.07 793   0.658  0.9127
+
+Duplication = 16:
+ contrast               estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform     0.374  7.47 793   0.050  1.0000
+ Homogeneous - Scaled     -0.620  7.47 793  -0.083  0.9998
+ Homogeneous - Adaptive    7.245  7.47 793   0.970  0.7667
+ Uniform - Scaled         -0.994 10.07 793  -0.099  0.9997
+ Uniform - Adaptive        6.871 10.07 793   0.682  0.9039
+ Scaled - Adaptive         7.865 10.07 793   0.781  0.8632
+
+Duplication = 32:
+ contrast               estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform     0.472  7.47 793   0.063  0.9999
+ Homogeneous - Scaled      1.403  7.47 793   0.188  0.9976
+ Homogeneous - Adaptive    8.052  7.47 793   1.078  0.7032
+ Uniform - Scaled          0.931 10.07 793   0.092  0.9997
+ Uniform - Adaptive        7.581 10.07 793   0.753  0.8756
+ Scaled - Adaptive         6.649 10.07 793   0.660  0.9120
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+P value adjustment: tukey method for comparing a family of 4 estimates
+
+     Condition Duplication Utilization.m Utilization.s
+1  Homogeneous           4      45.86077   31.95208308
+2  Homogeneous           8      45.86077   31.95208308
+3  Homogeneous          16      45.86077   31.95208308
+4  Homogeneous          32      45.86077   31.95208308
+5      Uniform           4      46.75293    0.48099906
+6      Uniform           8      45.98999    0.08629560
+7      Uniform          16      45.48645    0.06888732
+8      Uniform          32      45.38923    0.18675447
+9       Scaled           4      56.95103    4.65358375
+10      Scaled           8      48.95020    2.66617830
+11      Scaled          16      46.48089    2.22861747
+12      Scaled          32      44.45779    1.14594326
+13    Adaptive           4      47.92306    5.65330821
+14    Adaptive           8      42.32265    3.77191388
+15    Adaptive          16      38.61564    2.50669047
+16    Adaptive          32      37.80866    2.14143100
+
+
+GC Mean Utilization
+*****************
+ model term                    df1 df2 F.ratio p.value
+ Condition                       3 793   2.083  0.1011
+ Duplication                     3 793   1.886  0.1304
+ Session                         1 793   2.487  0.1152
+ Condition:Duplication           9 793   0.463  0.8993
+ Condition:Session               3 793   2.327  0.0733
+ Duplication:Session             3 793   0.108  0.9552
+ Condition:Duplication:Session   9 793   0.035  1.0000
+
+
+Duplication = 4:
+ contrast               estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform   -14.278  7.55 793  -1.891  0.2328
+ Homogeneous - Scaled    -13.336  7.55 793  -1.766  0.2906
+ Homogeneous - Adaptive   -2.787  7.55 793  -0.369  0.9828
+ Uniform - Scaled          0.942 10.18 793   0.093  0.9997
+ Uniform - Adaptive       11.492 10.18 793   1.129  0.6720
+ Scaled - Adaptive        10.549 10.18 793   1.036  0.7283
+
+Duplication = 8:
+ contrast               estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform    -1.631  7.55 793  -0.216  0.9964
+ Homogeneous - Scaled     -7.810  7.55 793  -1.034  0.7294
+ Homogeneous - Adaptive    2.496  7.55 793   0.331  0.9875
+ Uniform - Scaled         -6.179 10.18 793  -0.607  0.9299
+ Uniform - Adaptive        4.128 10.18 793   0.405  0.9775
+ Scaled - Adaptive        10.306 10.18 793   1.012  0.7424
+
+Duplication = 16:
+ contrast               estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform    -0.223  7.55 793  -0.030  1.0000
+ Homogeneous - Scaled     -5.866  7.55 793  -0.777  0.8650
+ Homogeneous - Adaptive    6.835  7.55 793   0.905  0.8022
+ Uniform - Scaled         -5.643 10.18 793  -0.554  0.9454
+ Uniform - Adaptive        7.058 10.18 793   0.693  0.8998
+ Scaled - Adaptive        12.700 10.18 793   1.247  0.5969
+
+Duplication = 32:
+ contrast               estimate    SE  df t.ratio p.value
+ Homogeneous - Uniform     0.893  7.55 793   0.118  0.9994
+ Homogeneous - Scaled     -3.415  7.55 793  -0.452  0.9692
+ Homogeneous - Adaptive    8.018  7.55 793   1.062  0.7130
+ Uniform - Scaled         -4.308 10.18 793  -0.423  0.9745
+ Uniform - Adaptive        7.125 10.18 793   0.700  0.8972
+ Scaled - Adaptive        11.432 10.18 793   1.123  0.6756
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+P value adjustment: tukey method for comparing a family of 4 estimates
+
+     Condition Duplication Utilization.m Utilization.s
+1  Homogeneous           4      60.39900     32.708396
+2  Homogeneous           8      59.77864     32.347879
+3  Homogeneous          16      59.64869     32.124731
+4  Homogeneous          32      59.58835     32.162099
+5      Uniform           4      74.67739      4.528003
+6      Uniform           8      61.40987      2.039360
+7      Uniform          16      59.87167      1.603123
+8      Uniform          32      58.69538      1.748840
+9       Scaled           4      73.73526      6.029152
+10      Scaled           8      67.58859      5.408473
+11      Scaled          16      65.51448      4.946438
+12      Scaled          32      63.00289      3.073514
+13    Adaptive           4      63.18577     10.325705
+14    Adaptive           8      57.28237      7.331287
+15    Adaptive          16      52.81416      4.961764
+16    Adaptive          32      51.57046      4.654868

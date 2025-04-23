@@ -1,0 +1,38 @@
+package: snn.models.component.synapse
+class: QuantizationSynapse
+
+model:
+  identifier: ET--MC
+
+  source: ET
+  target: MC
+
+  # in baseline mode, when not set to false, all weights are set to this value (homogeneous duplication).
+  baseline: false
+
+  # in the heterogeneous modes, user may choose equidistant weights or ~ 1/x weights.
+  # the former corresponds to an exponential prior on the input, the latter to a uniform prior.
+  uniform: true
+
+  # in the adaptive heterogeneous mode, weight densities are determined based on a calibration set.
+  adaptive: false
+  smoothing: -1   # bias-variance lever for weight density interpolation, from 0 (jagged) to 1 (smooth).
+
+  # current required to fire an average LIF unit in the destination ensemble.
+  payload: 25.0
+
+  # analog value that would activate exactly one MC per column, given the above payload.
+  # used to compute an appropriate multiplicative gain factor for the heterogeneous weights.
+  # if adjusted via multiplication, the OSC->MC weight (gamma amplitude) should be multiplied by the same factor.
+  limit: .01
+
+  sweep:
+    fixed:
+      weights: 0.0   # overwritten during calibration
+      weight_max: 10000000.0
+      weight_min: 0.0
+      delay_ms: 0.0
+
+loggable:
+- weights
+- output

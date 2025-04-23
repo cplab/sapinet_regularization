@@ -1,0 +1,21 @@
+package: sapicore.engine.synapse
+class: Synapse
+
+model:
+  identifier: OSC--MC
+
+  source: OSC
+  target: MC
+
+  sweep:
+    fixed:
+      # larger weights tighten the permissive window for MCs by pulling up the inhibitory oscillation amplitude.
+      # for expected behavior, should be set to -1 / (min_resolution * payload).
+      # 'min_resolution' is the minimal analog value that the spiking layer should be able to represent.
+      # 'payload' is the current required to fire a spiking unit (e.g., 10).
+      weights: -20.0
+      delay_ms: 0.0
+
+loggable:
+  - weights
+  - output

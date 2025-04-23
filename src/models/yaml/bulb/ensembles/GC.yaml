@@ -1,0 +1,32 @@
+package: sapicore.engine.ensemble.spiking
+class: LIFEnsemble
+
+model:
+  identifier: GC
+  num_units: 128
+
+  # background oscillation period (comment out if not applicable).
+  cycle_length: 50
+
+  # phase at which to reset refractory period and voltage.
+  release_phase: 25
+
+  sweep:
+    fixed:
+      volt_thresh: -50
+      volt_rest: -60.0
+      tau_ref: 50.0
+      leak_gl: 1.0
+      tau_mem: 4.0
+
+    # zipped:
+    #  volt_thresh: [-55, -50, -40, -30]
+
+    # random:
+    #  volt_thresh:
+    #    method: uniform
+    #    args: [-55.0, 20.0]
+
+loggable:
+- voltage
+- spiked

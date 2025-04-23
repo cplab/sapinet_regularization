@@ -1,0 +1,20 @@
+package: snn.models.component.synapse
+class: IICSynapse
+
+model:
+  identifier: GC--MC
+
+  source: GC
+  target: MC
+
+  sweep:
+    fixed:
+      weights: -0.0
+      weight_max: 0.0
+      weight_min: -10000000.0
+      # delay should be zero for IIC feedback, 24 otherwise.
+      delay_ms: 0.0
+
+loggable:
+  - weights
+  - blocking_duration

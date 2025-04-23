@@ -1,0 +1,32 @@
+package: snn.models.component.synapse
+class: DecaySTDP
+
+model:
+  identifier: MC--GC
+
+  source: MC
+  target: GC
+
+  non_causation_penalty: 50
+
+  sweep:
+    fixed:
+      # based roughly on guidelines from Imam & Cleland (2020).
+      weights: 25.0
+      weight_max: 30.0
+      weight_min: 0.0
+      tau_plus: 4.0
+      tau_minus: 4.0
+      alpha_plus: 0.3125
+      alpha_minus: 1.25
+      delay_ms: 25.0
+      decay: 0.0
+
+    # random:
+    #  weights:
+    #    method: uniform
+    #    args: [50.0, 0.0]
+
+loggable:
+  - weights
+  - output

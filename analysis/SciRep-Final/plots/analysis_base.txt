@@ -1,0 +1,100 @@
+
+Discrimination Accuracy
+******************
+ model term          df1  df2 F.ratio p.value
+ Duplication           3 1905   0.029  0.9932
+ Session               1 1905 487.492  <.0001
+ Duplication:Session   3 1905   0.018  0.9966
+
+
+ contrast                      estimate   SE   df t.ratio p.value
+ Duplication4 - Duplication8    -0.1674 1.31 1905  -0.128  0.9992
+ Duplication4 - Duplication16   -0.2902 1.31 1905  -0.222  0.9961
+ Duplication4 - Duplication32   -0.3621 1.31 1905  -0.277  0.9926
+ Duplication8 - Duplication16   -0.1228 1.31 1905  -0.094  0.9997
+ Duplication8 - Duplication32   -0.1947 1.31 1905  -0.149  0.9988
+ Duplication16 - Duplication32  -0.0719 1.31 1905  -0.055  0.9999
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+P value adjustment: tukey method for comparing a family of 4 estimates
+
+   Layer       Session   Condition Duplication Accuracy.m Accuracy.s
+1     ET Concentration Homogeneous           4   84.07738   8.878198
+2     ET Concentration Homogeneous           8   84.07738   8.878198
+3     ET Concentration Homogeneous          16   84.07738   8.878198
+4     ET Concentration Homogeneous          32   84.07738   8.878198
+5     ET    Saturation Homogeneous           4   72.17262  15.985247
+6     ET    Saturation Homogeneous           8   72.17262  15.985247
+7     ET    Saturation Homogeneous          16   72.17262  15.985247
+8     ET    Saturation Homogeneous          32   72.17262  15.985247
+9     GC Concentration Homogeneous           4   79.94048  19.565738
+10    GC Concentration Homogeneous           8   81.59970  14.614153
+11    GC Concentration Homogeneous          16   81.39137  13.868915
+12    GC Concentration Homogeneous          32   81.81548  13.741943
+13    GC    Saturation Homogeneous           4   56.75595  27.731219
+14    GC    Saturation Homogeneous           8   56.66667  27.560117
+15    GC    Saturation Homogeneous          16   57.37351  28.167748
+16    GC    Saturation Homogeneous          32   56.99405  28.073970
+17    MC Concentration Homogeneous           4   83.75744  13.271525
+18    MC Concentration Homogeneous           8   83.34821  12.990006
+19    MC Concentration Homogeneous          16   83.58631  13.144728
+20    MC Concentration Homogeneous          32   83.79464  13.326757
+21    MC    Saturation Homogeneous           4   58.63839  29.121654
+22    MC    Saturation Homogeneous           8   58.48214  28.902992
+23    MC    Saturation Homogeneous          16   58.48214  29.058212
+24    MC    Saturation Homogeneous          32   58.66071  29.090513
+
+
+Mean Utilization
+**************
+ model term          df1   df2 F.ratio p.value
+ Duplication           3 10225   0.068  0.9771
+ Session               1 10225   6.794  0.0092
+ Duplication:Session   3 10225   0.008  0.9990
+
+
+ contrast                      estimate   SE    df t.ratio p.value
+ Duplication4 - Duplication8     0.3102 1.01 10225   0.307  0.9900
+ Duplication4 - Duplication16    0.3752 1.01 10225   0.371  0.9826
+ Duplication4 - Duplication32    0.4053 1.01 10225   0.401  0.9782
+ Duplication8 - Duplication16    0.0650 1.01 10225   0.064  0.9999
+ Duplication8 - Duplication32    0.0951 1.01 10225   0.094  0.9997
+ Duplication16 - Duplication32   0.0302 1.01 10225   0.030  1.0000
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+P value adjustment: tukey method for comparing a family of 4 estimates
+
+  Duplication Utilization.m Utilization.s
+1           4      53.12988      36.50223
+2           8      52.81970      36.14323
+3          16      52.75473      36.01335
+4          32      52.72456      36.02838
+
+
+SD Utilization
+**************
+ model term          df1   df2 F.ratio p.value
+ Duplication           3 10225   0.037  0.9903
+ Session               1 10225   1.280  0.2579
+ Duplication:Session   3 10225   0.009  0.9988
+
+
+ contrast                      estimate     SE    df t.ratio p.value
+ Duplication4 - Duplication8    0.01580 0.0875 10225   0.181  0.9979
+ Duplication4 - Duplication16   0.02741 0.0875 10225   0.313  0.9894
+ Duplication4 - Duplication32   0.02273 0.0875 10225   0.260  0.9939
+ Duplication8 - Duplication16   0.01161 0.0875 10225   0.133  0.9992
+ Duplication8 - Duplication32   0.00693 0.0875 10225   0.079  0.9998
+ Duplication16 - Duplication32 -0.00468 0.0875 10225  -0.053  0.9999
+
+Results are averaged over the levels of: Session
+Degrees-of-freedom method: kenward-roger
+P value adjustment: tukey method for comparing a family of 4 estimates
+
+  Duplication Utilization.m Utilization.s
+1           4      1.513620      3.203933
+2           8      1.497822      3.119666
+3          16      1.486210      3.092230
+4          32      1.490887      3.105531

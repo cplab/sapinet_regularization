@@ -1,0 +1,162 @@
+identifier: SciRep24
+
+# specify one of two currently supported modes for the full simulation pipeline.
+# "Synthetic" to generate artificial data; "Drift" for UCSD drift dataset (default).
+mode: Synthetic
+
+# session and condition identifiers for tabular output and multirunner.
+condition: Uniform
+session: Concentration
+
+device: cpu  # hardware device, "cpu" or "cuda".
+seed: 314  # random number generation seed for reproducibility.
+
+# matplotlib/seaborn colormaps for different use cases.
+primary_cmap: viridis    # for generic plots.
+secondary_cmap: rocket    # for heatmap values.
+class_cmap: Spectral    # for labeled point cloud projections.
+
+# data synthesis parameters.
+synthesis:
+  # switch between data synthesis methods ("sklearn" or "physical").
+  method: physical
+
+  # if using scikit's make_classification procedure.
+  sklearn:
+    classes: 6
+    samples: 320
+
+    features: 4
+    informative: 4
+    redundant: 0
+
+    separation: 2.0
+    clusters_per_class: 1
+    flipped_label_prop: 0.0
+
+  # if using our hierarchical discrimination problem generation procedure.
+  physical:
+    # seed vector defining initial affinities (coordinates on the line), sorted descending.
+    # seed_vector: [1, .99, .98, .97, .96, .95, .94, .93]
+    seed_vector: [1.0, .95, .8, .75, .4, .35, .2, .15]
+    # number of samples per class.
+    n_samples: 512
+    # hierarchy depth, i.e. the number of 2-splits to perform.
+    # used for swapping affinities recursively when deriving additional sensors.
+    depth: 3
+    # sensors to include; must be <= len(affinities) and a multiple of 2 for balancing purposes.
+    sensors: 8
+    # target sparsity of the final affinity matrix, in terms of its Hoyer measure ranging [0, 1].
+    sparsity: .4
+    # scipy distribution parameters for signal and noise components (loc/scale can have different meanings; see docs).
+    signal:
+      distribution: expon
+      loc: [1, 2, 4, 8, 16, 32, 64, 128]
+      scale: [.1, .1, 1, 1, 1, 1, 1, 1]
+      # loc: [1,1,1,1,1,1,1,1]
+      # scale: [.01,.01,.01,.01,.1,.1,.1,.1]
+      # loc: [2,2,4,8,16,32,140,280]
+      # scale: [1,1,2,2,4,4,4,4]
+      # loc: [2,2,4,8,16,32,64,128]
+      # scale: [1,1,2,2,4,4,4,4]
+    contaminants:
+      loc: 0
+      scale: 0
+    noise:
+      distribution: norm
+      proportion: 1
+      loc: 0
+      scale:
+      - 0.01
+      - 0.01
+      - 0.01
+      - 0.01
+      - 0.01
+      - 0.02
+      - 0.05
+      - 0.1
+    sigmoid:
+      loc: 0
+      scale: 0
+
+sampling:
+  # metadata key whose values should be treated as class labels.
+  # if using with a real dataset, should correspond to an existing metadata key; in synthesis mode, can be anything.
+  key: Analyte
+
+  # metadata key whose values should be used for grouping and experimental design.
+  group_key: Analyte
+
+  # sampling and cross validation configuration.
+  folds: 8
+  shots: 2
+
+  # for synthetic data only, how many times to repeat the sampled subset.
+  repetitions: 0
+
+  # whether to shuffle samples before training/testing.
+  shuffle: true
+
+simulation:
+  # train, test, and rinse (empty inter-trial intervals) durations in simulation steps.
+  train_duration: 250
+  test_duration: 250
+  rinse: 50
+
+  # whether to run a test set or stop after training.
+  test: true
+
+  # whether to apply noise to the test set.
+  # noise:
+  #  mode: uniform
+  #  inds: [1, 7]
+  #  args:
+  #    low: .2
+  #    high: .8
+
+  # whether to perform classification and/or representational similarity analysis on data and responses.
+  svm: true
+  rsa: true
+
+  # whether 3D data and response visualization plots should be interactive (true) or static (false).
+  interactive: false
+
+  # whether to render individual fold plots and/or group-level plots, respectively.
+  # note that group plot SVGs can get prohibitively large, and should only be used with small/toy runs.
+  render: false
+  group: true
+  fig_size: (16, 12)
+
+  # whether to track weight evolution during training (differentiation, pruning).
+  verbose: true
+
+  # whether to dump intermediate data to file.
+  dump: false
+
+  # automatically edited by multi-run script; for logging purposes only.
+  duplication: 4
+
+  tensorboard:
+  - spiked:
+      kind: raster
+      format: image
+
+  - weights:
+      kind: heatmap
+      format: image
+      step: 150
+
+  - blocking_durations:
+      kind: heatmap
+      format: image
+      step: 150
+
+  - voltage:
+      kind: trace
+      format: scalar
+
+  - input:
+      kind: trace
+      format: scalar
+
+variant: con_4
