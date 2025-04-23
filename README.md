@@ -1,7 +1,7 @@
 # Heterogeneous Quantization Regularizes Spiking Neural Network Activity
 
 Spiking neural network simulations from [Moyal et al.](
-https://doi.org/10.48550/arXiv.2409.18396) (2025), tested on Ubuntu 22.04.
+https://www.nature.com/articles/s41598-025-96223-z) (2025), tested on Ubuntu 22.04.
 
 
 Installation
